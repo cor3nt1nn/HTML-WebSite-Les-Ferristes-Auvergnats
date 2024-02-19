@@ -1,0 +1,88 @@
+/* FOOTER CSS */
+footer{
+    background:#222327;
+    position: absolute;
+    left:0;
+    right: 0;
+    min-height: 120px;
+    height: 20%;
+    z-index:100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    transition: all .50s ease;
+    margin-top: 70px;
+}
+/* CONTENEUR ICONES CONTACTS */
+.icon-navbar{
+    max-width: 30px;
+    max-height: 30px;
+    width: 7vw;
+    height: 7vw;
+}
+.footer-icon-container img{
+    margin: 20px 10px;
+    transition: all .50s ease;
+}
+.footer-tooltip {
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 1);
+    font-family: "kanit";
+    color: #fff;
+    padding: 5px 30px;
+    border-radius: 5px;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icon-navbar:hover + .footer-tooltip {
+    display: block;
+}
+/* MENU FOOTER */
+.footer-navbar{
+    display: none;
+}
+.footer-navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.footer-navbar a:hover{
+    color: var(--yellow-logo);
+}
+
+.copyright{
+  margin-bottom:5px;
+  font-size:13px;
+  color:#aaa;
+}
+/* ICON DE CHAT */
+.chaticon {
+    z-index:10001;
+    width: 15%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    transition: opacity .7s;
+}
+.chaticon.scrolled {
+    opacity: 0.15;
+}
+.chaticon:hover{
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+@media(min-width: 1300px){
+    .footer-navbar{
+        display: flex;
+    }
+}
