@@ -52,7 +52,7 @@ header{
 }
 .logo_banner{
     height: 170%;
-    margin-top: 5%;
+    margin-top: 3%;
     transition: all .50s ease;
   }
 
@@ -90,6 +90,10 @@ header{
     header{
         padding:14px 2%;
         transition: .2s;
+    }
+    .logo_banner{
+        min-width: 80px;
+    min-height: 80px;
     }
     .navbar a{
         padding: 5px 0;
