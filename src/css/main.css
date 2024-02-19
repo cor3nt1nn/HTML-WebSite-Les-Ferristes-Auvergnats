@@ -7,6 +7,7 @@
     font-family: "kanit";
 }
 
+
 :root{
     --bg-color: #222327;
     --text-color: #fff;
@@ -16,13 +17,38 @@
     --brownhover-color: #e8d78b;
     --red-color: #700F06;
     --darkred-color: #361405;
+    --yellow-logo: #fff000;
 }
 
 body{
     background: var(--text-color);
     color: var(--bg-color);
+    margin-top: 15vh;
+    padding: 50px;
+    text-align: justify;
 }
 
+p{
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: "kanit-l";
+  }
+  
+  h1{
+    font-size: 35px;
+    text-align: center;
+    color: #000000;
+    font-family: "kanit-b";
+  }
+  
+  h2{
+    font-size: 25px;
+    text-align: center;
+    color: #000000;
+    font-family: "kanit-sb";
+  }
 
 header{
     background-image: url(../../res/img/banniere.png);
@@ -36,7 +62,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 28px 12%;
+    /* padding: 28px 12%; */
     transition: all .50s ease;
 }
 
@@ -50,12 +76,6 @@ header{
     width: 7vw;
     height: 7vw;
 }
-.logo_banner{
-    height: 170%;
-    margin-top: 3%;
-    transition: all .50s ease;
-  }
-
 .navbar{
     display: none;
 }
@@ -69,12 +89,53 @@ header{
 }
 
 .navbar a:hover{
-    color: var(--brownhover-color);
+    color: var(--yellow-logo);
 }
 .navbar a.active{
-    color: var(--brown-color);
-    font-weight: bold;
+    color: var(--yellow-logo);
+    font-family: "kanit-i";
 }
+
+.tooltip {
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 1);
+    font-family: "kanit";
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.footer-tooltip {
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 1);
+    font-family: "kanit";
+    color: #fff;
+    padding: 5px 30px;
+    border-radius: 5px;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icon-navbar:hover + .tooltip {
+    display: block;
+}
+.icon-navbar:hover + .footer-tooltip {
+    display: block;
+}
+.footer-navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.footer-navbar a:hover{
+    color: var(--yellow-logo);
+}
+
 .menuicon{
     height: 50px;
     width: 50px;
@@ -85,7 +146,31 @@ header{
     background-size: contain;
     z-index: 10001;
 }
+footer{
+    background:#222327;
+    position: absolute;
+    left:0;
+    right: 0;
+    min-height: 120px;
+    height: 20%;
+    z-index:1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    transition: all .50s ease;
+}
 
+.banner-logo{
+    height: 20vh;
+    width: 20vh;
+    background-image: url("../../res/img/logo_ferristes.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10001;
+    margin-top: 3%;
+}
 @media(min-width: 1300px){
     header{
         padding:14px 2%;
@@ -93,13 +178,16 @@ header{
     }
     .logo_banner{
         min-width: 80px;
-    min-height: 80px;
+        min-height: 80px;
     }
     .navbar a{
         padding: 5px 0;
         margin: 0px 20px;
     }
     .navbar{
+        display: flex;
+    }
+    .footer-navbar{
         display: flex;
     }
 }
@@ -112,6 +200,9 @@ header{
     .menuicon{
         display: block;
     }
+    .footer-navbar{
+        display: none;
+    }
     .navbar{
         position: absolute;
         top: 100%;
@@ -121,7 +212,7 @@ header{
         justify-content: flex-start;
         border-radius: 10px;
         transition: all .20s ease;
-        background: var(--darkred-color);
+        background: black;
     }
     .navbar a{
         display: block;
@@ -130,11 +221,11 @@ header{
         transition: all .50s ease;
       }
     .navbar a:hover{
-        color: var(--brownhover-color);
+        color: var(--yellow-logo);
         transform: translateX(10px);
     }
     .navbar a.active{
-        color: var(--brown-color);
+        color: var(--yellow-logo);
         font-weight: bold;
         transform: translateX(10px);
     }
@@ -142,24 +233,76 @@ header{
         display: flex;
         transition: all .50s ease;
     }
-    .logo_banner{
+    .banner-logo{
         max-width: 90px;
         max-height: 90px;
-        height: 170%;
         margin-top: 0px; 
     }
 }
 
+.chaticon {
+    z-index:10001;
+    width: 15%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    transition: opacity .7s;
+    /* transition: all 0.5s ease; */
+}
+
+.chaticon.scrolled {
+    opacity: 0.15;
+}
+
+.footer-icon-container img{
+    margin: 20px 10px;
+    transition: all .50s ease;
+}
+
+.chaticon:hover{
+    opacity: 1;
+    transition: opacity .2s;
+}
+.copyright{
+  margin-bottom:5px;
+  font-size:13px;
+  color:#aaa;
+}
 @font-face {
     font-family: kanit;
     src: url(../../res/fonts/Kanit/Kanit-Regular.ttf);
-}
-
-@font-face {
+  }
+  @font-face {
+    font-family: kanit-t;
+    src: url(../../res/fonts/Kanit/Kanit-Thin.ttf);
+  }
+  @font-face {
     font-family: kanit-sb;
     src: url(../../res/fonts/Kanit/Kanit-SemiBold.ttf);
   }
-@font-face {
+  @font-face {
+    font-family: kanit-m;
+    src: url(../../res/fonts/Kanit/Kanit-Medium.ttf);
+  }
+  @font-face {
+    font-family: kanit-sb;
+    src: url(../../res/fonts/Kanit/Kanit-SemiBold.ttf);
+  }
+  @font-face {
     font-family: kanit-b;
     src: url(../../res/fonts/Kanit/Kanit-Bold.ttf);
-}
+  }
+  @font-face {
+    font-family: kanit-l;
+    src: url(../../res/fonts/Kanit/Kanit-Light.ttf);
+  }
+  @font-face {
+    font-family: kanit-bi;
+    src: url(../../res/fonts/Kanit/Kanit-BoldItalic.ttf);
+  }
+  @font-face {
+    font-family: kanit-i;
+    src: url(../../res/fonts/Kanit/Kanit-Italic.ttf);
+  }
+
