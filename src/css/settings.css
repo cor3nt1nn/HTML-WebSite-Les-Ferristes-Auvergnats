@@ -1,10 +1,8 @@
 *{
-    /* margin: 0;
-    padding: 0; */
     box-sizing: border-box;
     text-decoration: none;
-    /* list-style: none; */
-    font-family: "kanit";
+    color: #000000;
+    font-family: "kanit-l";
 }
 a{
     color: #fff;
@@ -41,11 +39,8 @@ body{
     text-align: justify;
 }
 p{
-    font-size: 17px;
     margin-top: 10px;
     margin-bottom: 20px;
-    color: #000000;
-    font-family: "kanit-l";
 }
 h1{
     font-size: 35px;

@@ -6,7 +6,7 @@
     margin-top: 10%;
 }
 .bubble:hover{
-    transform: translateX(10px);
+    transform: translateX(5px);
 }
 .sidebar div {
     max-width: 15vw;
