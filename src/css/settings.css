@@ -1,9 +1,9 @@
 *{
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
+    /* list-style: none; */
     font-family: "kanit";
 }
 
@@ -22,8 +22,8 @@
 body{
     background: var(--text-color);
     color: var(--bg-color);
-    margin-top: 15vh;
     padding: 50px;
+    padding-top: 20vh;
     text-align: justify;
 }
 
@@ -45,4 +45,16 @@ h2{
     text-align: center;
     color: #000000;
     font-family: "kanit-sb";
+}
+h3{
+    font-size: 20px;
+    text-align: left;
+    color: #000000;
+    font-family: "kanit-sb";
+}
+p ol{
+    font-family: "kanit-l";
+    font-size: 17px;
+    list-style: circle;
+    text-align: center;
 }
