@@ -6,6 +6,10 @@
     /* list-style: none; */
     font-family: "kanit";
 }
+a{
+    color: #fff;
+    text-decoration: underline;
+}
 
 :root{
     --bg-color: #222327;
@@ -18,15 +22,24 @@
     --darkred-color: #361405;
     --yellow-logo: #fff000;
 }
+.page{
+    display: flex;
+}
+main{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    flex: 2;
+}
+
 
 body{
     background: var(--text-color);
     color: var(--bg-color);
     padding: 50px;
     padding-top: 20vh;
+    
     text-align: justify;
 }
-
 p{
     font-size: 17px;
     margin-top: 10px;
@@ -58,3 +71,4 @@ p ol{
     list-style: circle;
     text-align: center;
 }
+

@@ -44,6 +44,7 @@ footer{
 /* MENU FOOTER */
 .footer-navbar{
     display: none;
+    list-style: none;
 }
 .footer-navbar a{
     color: var(--text-color);
@@ -52,6 +53,8 @@ footer{
     padding: 5px 0;
     margin: 0px 30px;
     transition: all .50s ease;
+    text-decoration: none;
+    list-style: none;
 }
 
 .footer-navbar a:hover{
