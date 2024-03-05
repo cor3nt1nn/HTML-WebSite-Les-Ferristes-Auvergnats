@@ -68,6 +68,10 @@ const checkDate = () =>{
   }*/
     const date_ = date.value.trim(); //Assuming DD/MM/YYYY date 
     date_format = date_.split("/");
+    if(date_ == ""){
+        showSuccess(date);
+        return true;
+    } 
     const d = new Date(date_format[1]+"/"+date_format[0]+"/"+date_format[2]); //reformatting to MM/DD/YYYY
     const curr = new Date();
     if(isDateValid(d) === false){
@@ -144,7 +148,7 @@ const showSuccess = (input) => {
 
     // hide the error message
     const error = formField.querySelector('small');
-    error.textContent = ''; //validation action
+    error.textContent = 'Valide'; //validation action
      btn.disabled = false;
 }
 
