@@ -1,0 +1,59 @@
+.member{
+    height: 40vh;
+    width: 15vw;
+}
+
+.memberlist{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.memberimg{
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.memberinfo{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+}
+
+.membername{
+    font-size: 18px;
+    font-family: "kanit-m";
+    color: yellow;
+}
+
+.memberinfo li{
+    color: white;
+}
+
+.contactmember{
+    display: none;
+    width: 80%;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5vw;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.member:hover .contactmember{
+    display: flex;
+    background-color: black;
+}

@@ -24,18 +24,16 @@ a{
     display: flex;
 }
 main{
+    position: relative;
     padding-left: 5vw;
     padding-right: 5vw;
     flex: 2;
 }
-
-
 body{
     background: var(--text-color);
     color: var(--bg-color);
     padding: 50px;
     padding-top: 20vh;
-    
     text-align: justify;
 }
 p{
@@ -67,3 +65,12 @@ p ol{
     text-align: center;
 }
 
+.infoutils{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.infoutils li{
+    line-height: 50px
+}

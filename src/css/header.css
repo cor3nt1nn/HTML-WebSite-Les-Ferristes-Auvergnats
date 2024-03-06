@@ -36,6 +36,24 @@ header{
     height: 7vw;
     
 }
+
+.sub-menu {
+    display: none; 
+    position: absolute;
+    background: black;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    z-index: 10000;
+    border: 2px outset yellow;
+}
+.sub-menu li{
+    line-height: 30px
+}
+.sub-menu.open {
+    display: block;
+}
+
 .tooltip {
     position: absolute;
     display: none;
@@ -61,6 +79,7 @@ header{
     margin: 0px 30px;
     transition: all .50s ease;
     text-decoration: none;
+    z-index: 10;
     
 }
 
@@ -69,7 +88,7 @@ header{
 }
 .navbar a.active{
     color: var(--yellow-logo);
-    font-family: "kanit-i";
+    font-family: "kanit";
 }
 /* MENU DEROULANT */
 .menuicon{
