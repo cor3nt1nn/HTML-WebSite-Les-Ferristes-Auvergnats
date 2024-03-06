@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
 document.addEventListener('click', function(event) {
     // const isClickInsideFooter = submenu3.contains(event.target) || submenu4.contains(event.target);
     // const isClickInsideNavbar = submenu.contains(event.target) || submenu2.contains(event.target);

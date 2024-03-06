@@ -19,20 +19,19 @@ a{
     --red-color: #700F06;
     --darkred-color: #361405;
     --yellow-logo: #fff000;
+    --bgd-color:#E7E7E7;
 }
 .page{
     display: flex;
+    padding: 50px;
 }
 main{
     position: relative;
-    padding-left: 5vw;
-    padding-right: 5vw;
     flex: 2;
 }
 body{
-    background: var(--text-color);
+    background: var(--bgd-color);
     color: var(--bg-color);
-    padding: 50px;
     padding-top: 20vh;
     text-align: justify;
 }

@@ -1,0 +1,41 @@
+.logos-carousel{
+    overflow: hidden;
+    padding: 30px 0px;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+    height: 150px;
+}
+
+.logos-carousel:before, .logos-carousel:after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    content: "";
+    z-index: 2;
+}
+.logos-carousel::before{
+    left: 0;
+    background: linear-gradient(to left, transparent, white);
+}
+.logos-carousel::after{
+    right: 0;
+    background: linear-gradient(to right, transparent, white);
+}
+.logos-slide{
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img{
+    height: 70px;
+    margin: 0 40px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }to{
+        transform: translateX(-100%);
+    }
+}

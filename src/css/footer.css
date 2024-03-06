@@ -1,6 +1,6 @@
 /* FOOTER CSS */
 footer{
-    background:#222327;
+    background-image: url(../../res/img/banniere.png);
     position: absolute;
     min-height: 120px;
     height: 20%;
