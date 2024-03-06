@@ -157,7 +157,6 @@ form.addEventListener('submit', function (e) {
     // prevent the form from submitting
     e.preventDefault();
 
-
     // validate forms
     let last_ = checkLastName(),
         first_ = checkFirstName(),
@@ -169,7 +168,8 @@ form.addEventListener('submit', function (e) {
 
     // submit to the server if the form is valid
     if (isFormValid) {
-        //Sending action
+        $(this).unbind('submit').submit()
+        alert("rebinded ! ");
     }
 });
 

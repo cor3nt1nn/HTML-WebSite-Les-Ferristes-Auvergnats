@@ -1,0 +1,147 @@
+/* HEADER CSS */
+
+header{
+    background-image: url(../../res/img/banniere.png);
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    min-height: 65px;
+    height: 15%;
+    z-index:1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
+/* LOGO BANNIERE */
+.banner-logo{
+    height: 20vh;
+    width: 20vh;
+    background-image: url("../../res/img/logo_ferristes.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10001;
+    margin-top: 3%;
+}
+/* LOGOS CONTACTS */
+.icon-container img{
+    margin: 0px 10px;
+    transition: all .50s ease;
+}
+.icon-navbar{
+    max-width: 30px;
+    max-height: 30px;
+    width: 7vw;
+    height: 7vw;
+    
+}
+.tooltip {
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 1);
+    font-family: "kanit";
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.icon-navbar:hover + .tooltip {
+    display: block;
+}
+/* MENU CLIQUABLE */
+.navbar{
+    display: none;
+    list-style: none;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+    text-decoration: none;
+    
+}
+
+.navbar a:hover{
+    color: var(--yellow-logo);
+}
+.navbar a.active{
+    color: var(--yellow-logo);
+    font-family: "kanit-i";
+}
+/* MENU DEROULANT */
+.menuicon{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: none;
+    color: var(--text-color);
+    background-image: url("../../res/img/menu-regular-156.png");
+    background-size: contain;
+    z-index: 10001;
+}
+
+@media(min-width: 1300px){
+    header{
+        padding:14px 2%;
+        transition: .2s;
+    }
+    .logo_banner{
+        min-width: 80px;
+        min-height: 80px;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+    .navbar{
+        display: flex;
+    }
+}
+
+@media(max-width: 1300px){
+    header{
+        padding:14px 2%;
+        transition: .2s;
+    }
+    .menuicon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 2%;
+        width: 70%;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .20s ease;
+        background: black;
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0px;
+        padding: 0px 25px;
+        transition: all .50s ease;
+      }
+    .navbar a:hover{
+        color: var(--yellow-logo);
+        transform: translateX(10px);
+    }
+    .navbar a.active{
+        color: var(--yellow-logo);
+        font-weight: bold;
+        transform: translateX(10px);
+    }
+    .navbar.open{
+        display: flex;
+        transition: all .50s ease;
+    }
+    .banner-logo{
+        max-width: 90px;
+        max-height: 90px;
+        margin-top: 0px; 
+    }
+}

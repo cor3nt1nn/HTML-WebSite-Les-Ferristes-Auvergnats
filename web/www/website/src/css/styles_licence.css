@@ -1,0 +1,46 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.license h1{
+color:white;
+    text-align:center;
+    background-color:black;
+}
+#lois:hover + #comp{
+    display: none;
+}
+#comp:hover + #lois{
+    display: none;
+}
+
+.licence-text{
+	background-color:rgb(169,169,169, 0.8);
+}
+.licence p{
+    color:white;
+    text-align:center;
+    background-color: rgb(169,169,169);
+}
+li {
+	list-style: inside;
+	 margin-top: 10px;
+}
+h1{
+    color:white;
+    text-align:center;
+    background-color:black;
+}
+.licence{
+	background-image: url("../../res/img/logo_ferristes.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:#464646;
+}
+
+
