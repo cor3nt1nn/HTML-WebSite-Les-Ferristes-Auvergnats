@@ -53,15 +53,19 @@ header{
 .sub-menu.open {
     display: block;
 }
-
+.tooltip-a{
+    text-decoration: none;
+}
 .tooltip {
-    position: absolute;
+    position: absolute ;
+    margin-left: 70px;
     display: none;
     background-color: rgba(0, 0, 0, 1);
     font-family: "kanit";
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
+    width: 10%;
 }
 .icon-navbar:hover + .tooltip {
     display: block;

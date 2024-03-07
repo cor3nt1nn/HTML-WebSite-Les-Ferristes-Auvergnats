@@ -25,8 +25,13 @@ a{
     display: flex;
     padding: 50px;
 }
+.home{
+    display: block;
+    padding: 50px;
+}
 main{
     position: relative;
+    padding: 50px;
     flex: 2;
 }
 body{
@@ -39,13 +44,13 @@ p{
     margin-top: 10px;
     margin-bottom: 20px;
 }
-h1{
+main h1{
     font-size: 35px;
     text-align: center;
     color: #000000;
     font-family: "kanit-b";
 }
-h2{
+main h2{
     font-size: 25px;
     text-align: center;
     color: #000000;
@@ -72,4 +77,84 @@ p ol{
 }
 .infoutils li{
     line-height: 50px
+}
+
+.home_banniere{
+    background-image: url("../../res/img/home_bannierep.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    padding: 0px 40px;
+    align-items: start;
+    
+}
+.page .home_banniere h1{
+    text-align: left;
+    font-size: 5em;
+    font-family: "kanit-b";
+    margin-top: 0;
+    padding-top: 40px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    color: #dcc214;
+    
+}
+.page .home_banniere h3{
+    text-align: left;
+    font-size: 2em;
+    font-family: "kanit-sb";
+    margin-top: 0;
+    padding-left: 40px;
+    color: #fff;
+    text-shadow: 12px 12px 12px rgb(0, 0, 0);
+}
+.page .home_banniere h3 b{
+    color: #dcc214;
+    font-family: "kanit-b";
+    text-shadow: 12px 12px 12px rgb(0, 0, 0);
+}
+.page .home_banniere h4{
+    text-align: left;
+    font-size: 1.3em;
+    font-family: "kanit-t";
+    margin-top: 0;
+    padding-left: 40px;
+    color: #fff;
+    text-shadow: 12px 12px 12px rgb(0, 0, 0);
+}
+
+.home-banner-split{
+    display: flex;
+    flex-direction: row;
+}
+.home-banner-split .home-banner-text{
+    width: 60%;
+    margin-bottom: 0;
+}
+.login-link{
+    background-image: url(../../res/img/log_icon.png);
+    max-width: 30px;
+    max-height: 30px;
+    width: 7vw;
+    height: 7vw;
+}
+.home-banner-split .home-banner-button{
+    width: 25%;
+    height: 50px;
+    display: flex;
+    font-size: 1.3em;
+    align-items: center;
+    margin: auto;
+    font-family: "kanit";
+    box-shadow: 1px 1px 3px rgb(255, 255, 0);
+    border: 1px solid yellow;
+}
+.home-banner-split .home-banner-button:hover{
+    background-color: yellow;
+    color: black;
+    transition: .5s; 
 }

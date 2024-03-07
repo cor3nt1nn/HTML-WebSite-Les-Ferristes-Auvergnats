@@ -2,45 +2,207 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../css/form.css"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="src/css/settings.css">
+    <link rel="stylesheet" href="src/css/fonts.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/sidebar.css">
+    <link rel="stylesheet" href="src/css/slider.css">
+    <link rel="stylesheet" href="src/css/logo_carousel.css">
 </head>
 <body>
-    <div id=form>
-        <form id="signup" class="form">
-                <div>
-                    <label for="firstname">Prénom</label>
-                    <input type="text" name="firstname" id="firstname" required minlength="1" placeholder="Entrez votre prénom">
-                    <small></small>
+    <!-- HEADER -->
+    <header>
+        <a href="index.html" class="banner-logo"></a>
+        
+        <div class="icon-container">
+            <a class="tooltip-a" href="form.html">
+                <img class=icon-navbar src="res/img/log_icon.png" alt="Login">
+            </a>
+            <img class=icon-navbar src="res/img/envelope-regular-156.png" alt="Mail">
+            <div class="tooltip" >ferristes.auvergnats@gmail.com</div>
+            <img class=icon-navbar src="res/img/phone-regular-156.png" alt="Téléphone">
+            <div class="tooltip" >00-11-22-33-44</div>
+            <a class="tooltip-a" target="_blank" href="https://www.instagram.com/ferristes_auvergnats/">
+            <img class=icon-navbar src="res/img/instagram-logo-156.png" alt="Instagram">
+            <div class="tooltip" >@ferristes_auvergnats</div>
+            </a>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" class="active">ACCUEIL</a></li>
+                <li class="submenu">
+                    <a class="developp" href="#">ASSOCIATION</a>
+                    <ul class="sub-menu">
+                        <li><a href="src/html/infoutiles.html">Informations Utiles</a></li>
+                        <li><a href="src/html/presclub.html">Présentation du Club</a></li>
+                        <li><a href="src/html/presmembres.html">Organigramme</a></li>
+                        <li><a href="src/html/reglement.html">Règlement Intérieur</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SE LICENCIER</a></li>
+                <li class="submenu">
+                    <a class="developp" href="#">RESULTATS</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Résultat Tournoi</a></li>
+                        <li><a href="#">Classement</a></li>
+                    </ul>
+                </li>
+                <li><a href="src/html/contact.html">NOUS CONTACTER</a></li>
+            </ul>
+        </nav>
+        <a class=menuicon></a>
+       
+    </header>
+    
+    <!-- ICON DE CHAT -->
+    <img class="chaticon" src="res/img/chat-logo.png" alt="">
+    
+    <div class="page home">
+        <div class="home_banniere">
+            <h1>Les Ferristes Auvergnats</h1>
+            <h3>Rejoignez le <b>premier</b> club de Bras de Fer en <b>Auvergne</b></h3>
+            <div class="home-banner-split">
+                <h4 class="home-banner-text">Découvrez une communauté passionnée, prête à vous accueillir et à vous soutenir 
+                    dans votre passion pour le bras de fer. Relevez de nouveaux défis, améliorez votre 
+                    technique et participez à des événements inoubliables.</h4>
+                <a href="src/html/licence.html" class="btn home-banner-button"" target="_blank">JE ME RENSEIGNE</a>
+            </div>
+        </div>
+        <main>
+            <div class="recent-post-container clearfix">
+                <div class="recent-post">
+                    <h1 class="recent-post-title">Récemment Ajoutés</h1>
+                    <div class="post">
+                        <img src="res/img/bras_fer_preview.jpg" alt="" class="post-image">
+                        <div class="post-preview">
+                        <h1 class="preview-title"><a href="https://fr.wikipedia.org/wiki/Bras_de_fer" target="_blank">Qu'est-ce-que le Bras de Fer ?</a></h1>
+                        <img src="res/img/copyright.png" class="copyright-preview" alt="">
+                        <i>Wikipédia</i>
+                        &nbsp;
+                        <img src="res/img/calendar_icon.png" class="date-preview" alt="">
+                        <i>Mar 6, 2024</i>
+                        <p class="preview-text">Bien qu'étant une activité millénaire, le bras de fer en tant que sport est très récent. En effet, il a été codifié et organisé depuis les années 1970. Populaire dans les pays d'Europe de l'Est jusqu'en Asie ainsi qu'en Amérique du Nord, cette discipline est en développement en France.
+                        </p>
+                        <a href="https://fr.wikipedia.org/wiki/Bras_de_fer" class="btn read-more" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="res/img/ffforce_preview.jpg" alt="" class="post-image">
+                        <div class="post-preview">
+                        <h1 class="preview-title"><a href="https://youtu.be/yUtrbilSe3s?si=9KOzsydHAcennaU3" target="_blank">Aymeric Pradines nous explique la discipline</a></h1>
+                        <img src="res/img/copyright.png" class="copyright-preview" alt="">
+                        <i>FFForce</i>
+                        &nbsp;
+                        <img src="res/img/calendar_icon.png" class="date-preview" alt="">
+                        <i>Mar 5, 2024</i>
+                        <p class="preview-text">Présentation de la discipline du Bras de Fer par le multiple champion de france, Aymeric Pradines. Le ferriste classé dans le top 20 mondial vous expliquera en détail les règles, les techniques, et les bases pour commencer à s'entraîner.
+                        </p>
+                        <a href="https://youtu.be/yUtrbilSe3s?si=9KOzsydHAcennaU3" class="btn read-more" target="_blank">View Video</a>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="res/img/ffforce_preview.jpg" alt="" class="post-image">
+                        <div class="post-preview">
+                        <h1 class="preview-title"><a href="https://youtu.be/yUtrbilSe3s?si=9KOzsydHAcennaU3" target="_blank">Aymeric Pradines nous explique la discipline</a></h1>
+                        <img src="res/img/copyright.png" class="copyright-preview" alt="">
+                        <i>FFForce</i>
+                        &nbsp;
+                        <img src="res/img/calendar_icon.png" class="date-preview" alt="">
+                        <i>Mar 5, 2024</i>
+                        <p class="preview-text">Présentation de la discipline du Bras de Fer par le multiple champion de france, Aymeric Pradines. Le ferriste classé dans le top 20 mondial vous expliquera en détail les règles, les techniques, et les bases pour commencer à s'entraîner.
+                        </p>
+                        <a href="https://youtu.be/yUtrbilSe3s?si=9KOzsydHAcennaU3" class="btn read-more" target="_blank">View Video</a>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label for="lastname">Nom</label>
-                    <input type="text" name="lastname" id="lastname" required minlength="1" placeholder="Entrez votre nom">
-                    <small></small>
-                </div>
-                <div>
-                    <label for="birthdate">Date de Naissance</label>
-                    <input type="text" name="birthdate" id="birthdate" placeholder="DD/MM/YYYY (facultatif)">
-                    <small></small>
-                </div>
-                <div>
-                    <label for="username">Pseudo</label>
-                    <input type="text" name="username" id="username" required minlength="6" placeholder="Entrez votre pseudo">
-                    <small></small>
-                </div>
-                <div>
-                    <label for="userpwd">Mot de Passe</label>
-                    <input type="password" name="userpwd" id="userpwd" required minlength="12" placeholder="Entrez votre Mot de Passe">
-                    <small></small>
-                </div>
-                <div>
-                    <label for="useremail">Email</label>
-                    <input type="text" name="useremail" id="useremail" required placeholder="Entrez votre adresse email">
-                    <small></small>
-                </div>
-                <input type="submit" value="S'enregistrer" class="btn" id="sub">
-       </form>
+                <div class="sidebarhome">
+                    <div class="sidebaritem">
+                        <h1 class="caltitle">Calendrier</h1>
+                        <p class="sidebarcontent">
+                            Le calendrier des compétitions nationales et internationales de Bras de Fer Sportif de la saison 2024 est consultable et téléchargeable ci-dessous.
+                        </p>
+                        <center>
+                            <a href="https://www.ffforce.fr/medias/fichiers/Saison%202024/BRAS%20DE%20FER%20SPORTIF/CALENDRIER%20(Provisoire)%20SAISON%202024.pdf" class="calendar-dn" target="_blank">Voir le Calendrier</a>
+                        </center>
+                    </div>
+                    <div class="sidebaritem long ">
+                        <h1 class="licetitle">Se licencier FFForce</h1>
+                        <img src="res/img/ffforce_preview.jpg" class="licelogo" alt="">
+                        <p class="sidebarcontent">
+                            Découvrir les avantages et les bonnes raisons de prendre une licence FFForce.
+                        </p>
+                        <a href="https://www.ffforce.fr/fr/se-licencier-ffforce/prendre-sa-licence/les-avantages-de-la-licence.html" class="calendar-dn" target="_blank">Voir la Page</a>
+                    </div>
+            </div>
+            <!-- ###############""RIGHT HERE ############################## -->
+
+            <!-- ########################################################## -->
+        </main>
     </div>
-<script src="../js/form.js"></script>
+    <div class="logos-carousel">aa
+        <div class="logos-slide">
+            <img src="res/img/logo_carousel/basicfit_carousel.png" alt="">
+            <img src="res/img/logo_carousel/decat_carousel.png" alt="">
+            <img src="res/img/logo_carousel/ffforce_carousel.png" alt="">
+            <img src="res/img/logo_carousel/ghost_carousel.png" alt="">
+            <img src="res/img/logo_carousel/gymshark_carousel.png" alt="">
+            <img src="res/img/logo_carousel/matrix_carousel.png" alt="">
+            <img src="res/img/logo_carousel/monster_carousel.png" alt="">
+            <img src="res/img/logo_carousel/myprotein_carousel.png" alt="">
+            <img src="res/img/logo_carousel/nike_carousel.png" alt="">            
+        </div>
+    </div>
+    <script>
+        var copy=document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos-carousel").appendChild(copy);
+    </script>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-icon-container">
+            <img class=icon-navbar src="res/img/envelope-regular-156.png" alt="Mail">
+            <div class="footer-tooltip">ferristes.auvergnats@gmail.com</div>
+            <img class=icon-navbar src="res/img/phone-regular-156.png" alt="Téléphone">
+            <div class="footer-tooltip">00-11-22-33-44</div>
+            <a target="_blank" href="https://www.instagram.com/ferristes_auvergnats/">
+                <img class=icon-navbar src="res/img/instagram-logo-156.png" alt="Instagram">
+                <div class="footer-tooltip">@ferristes_auvergnats</div>
+            </a>
+        </div>
+        <nav>
+            <ul class=footer-navbar>
+                <li><a href="index.html" class=active>ACCUEIL</a></li>
+                <li class="submenuf">
+                    <a class="developpf" href="#">ASSOCIATION</a>
+                    <ul class="sub-menu-f">
+                        <li><a href="src/html/infoutiles.html">Informations Utiles</a></li>
+                        <li><a href="src/html/presclub.html">Présentation du Club</a></li>
+                        <li><a href="src/html/presmembres.html">Organigramme</a></li>
+                        <li><a href="src/html/reglement.html">Réglement Intérieur</a></li>
+                    </ul>
+                </li>
+                <li>
+                <li><a href="#">SE LICENCIER</a></li>
+                <li class="submenuf">
+                    <a class="developpf" href="#">RESULTATS</a>
+                    <ul class="sub-menu-f">
+                        <li><a href="#">Résultat Tournoi</a></li>
+                        <li><a href="#">Classement</a></li>
+                    </ul>
+                </li>
+                <li><a href="src/html/contact.html">NOUS CONTACTER</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">Les Ferristes Auvergnats © 2024</p>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudfare.com/ajax/libs/jsquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="src/js/base.js"></script>
+    <script src="src/js/scripts.js"></script>
 </body>
+</html>
