@@ -1,46 +1,135 @@
-*{
-	font-family: Arial, Helvetica, sans-serif;
-}
-.container{
-  margin: auto;
+@media screen and (max-width: 550px) {
+.container {
+  width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  height: 90%;
+  gap: 10px;
+  margin: 0 auto;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) { 
+		background:linear-gradient(137deg, rgba(36,10,0,0.5) 0%, rgba(255,17,17,0.5) 0%, rgba(229,235,64,0.5) 100%, rgba(0,212,255,0.5) 100%),url("../../res/img/logo_ferristes.png")no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../../res/img/logo_ferristes.png")
+	no-repeat 50% / cover;
+    }
+    .content {
+      display: flex;
+       padding: 15px;
+       opacity: 0;
+     flex-direction: column;
+      height: 100%;
+       background: rgb(2, 2, 46);
+       background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 75) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+	
+      span {
+       display: flex; 
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+    
+     &:focus {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:focus .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
 }
-.license h1{
-color:white;
-    text-align:center;
-    background-color:black;
-}
-#lois:hover + #comp{
-    display: none;
-}
-#comp:hover + #lois{
-    display: none;
 }
 
-.licence-text{
-	background-color:rgb(169,169,169, 0.8);
-}
-.licence p{
-    color:white;
-    text-align:center;
-    background-color: rgb(169,169,169);
-}
-li {
-	list-style: inside;
-	 margin-top: 10px;
-}
-h1{
-    color:white;
-    text-align:center;
-    background-color:black;
-}
-.licence{
-	background-image: url("../../res/img/logo_ferristes.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color:#464646;
-}
+@media screen and (min-width: 551px) {
+.container {
+  display: block;
+  justify-content: center;
+  height: 90%;
+  gap: 10px;
+  margin: 0 auto;
 
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
 
+    &:nth-of-type(1) { 
+		background:linear-gradient(137deg, rgba(36,10,0,0.5) 0%, rgba(255,17,17,0.5) 0%, rgba(229,235,64,0.5) 100%, rgba(0,212,255,0.5) 100%),url("../../res/img/logo_ferristes.png")no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../../res/img/logo_ferristes.png")
+	no-repeat 50% / cover;
+    }
+    .content {
+      display: flex;
+       padding: 15px;
+       opacity: 0;
+     flex-direction: column;
+      height: 100%;
+       background: rgb(2, 2, 46);
+       background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 75) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+	
+      span {
+       display: inline flex; 
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+}
