@@ -3,12 +3,11 @@
   width: 50%;
   display: flex;
   justify-content: center;
-  height: 90%;
-  gap: 10px;
+  gap: 1vw;
   margin: 0 auto;
 
   > div {
-    flex: 0 0 120px;
+    flex: 0 0 40vw;
     border-radius: 0.5rem;
     transition: 0.5s ease-in-out;
     cursor: pointer;
@@ -25,7 +24,6 @@
     }
     .content {
       display: flex;
-       padding: 15px;
        opacity: 0;
      flex-direction: column;
       height: 100%;
@@ -40,30 +38,29 @@
       visibility: hidden;
 	
       span {
-       display: flex; 
         font-size: 1.2rem;
       }
     }
 
-    &:hover {
+    &:hover, &:active{
       flex: 0 0 250px;
       box-shadow: 1px 3px 15px #7645d8;
       transform: translatey(-30px);
     }
 
-    &:hover .content {
+    &:hover .content{
       opacity: 1;
       transform: translatey(0%);
       visibility: visible;
     }
     
-     &:focus {
+     &:focus{
       flex: 0 0 250px;
       box-shadow: 1px 3px 15px #7645d8;
       transform: translatey(-30px);
     }
 
-    &:focus .content {
+    &:focus .content{
       opacity: 1;
       transform: translatey(0%);
       visibility: visible;
@@ -74,14 +71,14 @@
 
 @media screen and (min-width: 551px) {
 .container {
-  display: block;
+  display: flex;
   justify-content: center;
   height: 90%;
   gap: 10px;
   margin: 0 auto;
 
   > div {
-    flex: 0 0 120px;
+    flex: 0 0 30vw;
     border-radius: 0.5rem;
     transition: 0.5s ease-in-out;
     cursor: pointer;
@@ -120,7 +117,7 @@
     }
 
     &:hover {
-      flex: 0 0 250px;
+      flex: 1 0 40vw;
       box-shadow: 1px 3px 15px #7645d8;
       transform: translatey(-30px);
     }
