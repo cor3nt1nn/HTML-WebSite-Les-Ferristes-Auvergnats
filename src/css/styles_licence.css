@@ -1,14 +1,14 @@
 @media screen and (max-width: 550px) {
 .container {
+font-family: "kanit-sb";
   width: 50%;
   display: flex;
   justify-content: center;
-  height: 90%;
-  gap: 10px;
+  gap: 1vw;
   margin: 0 auto;
 
   > div {
-    flex: 0 0 120px;
+    flex: 0 0 40vw;
     border-radius: 0.5rem;
     transition: 0.5s ease-in-out;
     cursor: pointer;
@@ -25,7 +25,6 @@
     }
     .content {
       display: flex;
-       padding: 15px;
        opacity: 0;
      flex-direction: column;
       height: 100%;
@@ -33,37 +32,39 @@
        background: linear-gradient(
         0deg,
         rgba(2, 2, 46, 0.6755077030812324) 0%,
-        rgba(255, 255, 255, 75) 100%
+        rgba(200, 200, 200, 75) 100%
       );
       transform: translatey(100%);
       transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
       visibility: hidden;
-	
+      gap: 1vh;
+    }
       span {
-       display: flex; 
+      color: white;
+      text-align:left;
         font-size: 1.2rem;
-      }
+      
     }
 
-    &:hover {
+    &:hover, &:active{
       flex: 0 0 250px;
       box-shadow: 1px 3px 15px #7645d8;
       transform: translatey(-30px);
     }
 
-    &:hover .content {
+    &:hover .content{
       opacity: 1;
       transform: translatey(0%);
       visibility: visible;
     }
     
-     &:focus {
+     &:focus{
       flex: 0 0 250px;
       box-shadow: 1px 3px 15px #7645d8;
       transform: translatey(-30px);
     }
 
-    &:focus .content {
+    &:focus .content{
       opacity: 1;
       transform: translatey(0%);
       visibility: visible;
@@ -74,14 +75,15 @@
 
 @media screen and (min-width: 551px) {
 .container {
-  display: block;
+  font-family: "kanit-sb";
+  display: flex;
   justify-content: center;
   height: 90%;
   gap: 10px;
   margin: 0 auto;
 
   > div {
-    flex: 0 0 120px;
+    flex: 0 0 30vw;
     border-radius: 0.5rem;
     transition: 0.5s ease-in-out;
     cursor: pointer;
@@ -100,27 +102,28 @@
       display: flex;
        padding: 15px;
        opacity: 0;
+       gap: 1vh;
      flex-direction: column;
       height: 100%;
        background: rgb(2, 2, 46);
        background: linear-gradient(
         0deg,
         rgba(2, 2, 46, 0.6755077030812324) 0%,
-        rgba(255, 255, 255, 75) 100%
+        rgba(200, 200, 200, 75) 100%
       );
       transform: translatey(100%);
       transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
       visibility: hidden;
-	
+    }
       span {
-       display: inline flex; 
+        display: inline flex; 
         margin-top: 5px;
-        font-size: 1.2rem;
-      }
+        color: white;
+        font-size: 1.8rem;
     }
 
     &:hover {
-      flex: 0 0 250px;
+      flex: 1 0 40vw;
       box-shadow: 1px 3px 15px #7645d8;
       transform: translatey(-30px);
     }
