@@ -1,5 +1,6 @@
 @media screen and (max-width: 550px) {
 .container {
+font-family: "kanit-sb";
   width: 50%;
   display: flex;
   justify-content: center;
@@ -31,15 +32,18 @@
        background: linear-gradient(
         0deg,
         rgba(2, 2, 46, 0.6755077030812324) 0%,
-        rgba(255, 255, 255, 75) 100%
+        rgba(200, 200, 200, 75) 100%
       );
       transform: translatey(100%);
       transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
       visibility: hidden;
-	
+      gap: 1vh;
+    }
       span {
+      color: white;
+      text-align:left;
         font-size: 1.2rem;
-      }
+      
     }
 
     &:hover, &:active{
@@ -71,6 +75,7 @@
 
 @media screen and (min-width: 551px) {
 .container {
+  font-family: "kanit-sb";
   display: flex;
   justify-content: center;
   height: 90%;
@@ -97,23 +102,24 @@
       display: flex;
        padding: 15px;
        opacity: 0;
+       gap: 1vh;
      flex-direction: column;
       height: 100%;
        background: rgb(2, 2, 46);
        background: linear-gradient(
         0deg,
         rgba(2, 2, 46, 0.6755077030812324) 0%,
-        rgba(255, 255, 255, 75) 100%
+        rgba(200, 200, 200, 75) 100%
       );
       transform: translatey(100%);
       transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
       visibility: hidden;
-	
+    }
       span {
-       display: inline flex; 
+        display: inline flex; 
         margin-top: 5px;
-        font-size: 1.2rem;
-      }
+        color: white;
+        font-size: 1.8rem;
     }
 
     &:hover {
