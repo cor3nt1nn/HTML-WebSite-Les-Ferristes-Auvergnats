@@ -23,16 +23,18 @@ a{
 }
 .page{
     display: flex;
-    padding: 50px;
+    height: auto;
 }
 .home{
     display: block;
     padding: 50px;
+    height: 1500px;
 }
 main{
     position: relative;
     padding: 50px;
     flex: 2;
+    /* height: 1000px; */
 }
 body{
     background: var(--bgd-color);
@@ -84,11 +86,11 @@ p ol{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 50vh;
+    /* height: 50vh; */
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 30px;
-    padding: 0px 40px;
+    padding: 0px 0px 40px 40px;
     align-items: start;
     
 }
@@ -157,4 +159,61 @@ p ol{
     background-color: yellow;
     color: black;
     transition: .5s; 
+}
+
+@media screen and (max-width: 1273px) {
+    main{
+        padding: 0px;
+    }
+    .page {
+        flex-direction: column;
+    }
+    .home{
+        padding: 20px;
+    }
+    
+    .home_banniere {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        padding: 0px 10px 20px 10px;
+    }
+    
+    .page .home_banniere h1{
+        font-size: 3em;
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        color: #dcc214;
+        text-align: center;
+    }
+    .page .home_banniere h3{
+        text-align: center;
+        font-size: 1.5em;
+        padding-left: 0px;
+        text-shadow: 4px 4px 4px rgb(0, 0, 0);
+    }
+    .page .home_banniere h4{
+        text-align: justify;
+        font-size: 1.1em;
+        padding: 10px;
+        text-shadow: 4px 4px 4px rgb(0, 0, 0);
+    }
+    
+    .home-banner-split {
+        flex-direction: column; /* Change la direction de la flexbox en colonne */
+    }
+    
+    .home-banner-split .home-banner-text {
+        width: 100%; /* Utilise toute la largeur disponible */
+    }
+    .home-banner-split .home-banner-button{
+        width: 80%;
+        height: 40px;
+        font-size: 1.1em;
+        align-items: center;
+        margin: auto;
+        box-shadow: 1px 1px 3px rgb(255, 255, 0);
+        border: 1px solid yellow;
+    }
 }
