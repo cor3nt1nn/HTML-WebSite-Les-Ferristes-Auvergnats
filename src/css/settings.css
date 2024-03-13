@@ -20,11 +20,17 @@ a{
     --darkred-color: #361405;
     --yellow-logo: #fff000;
     --bgd-color:#E7E7E7;
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
 }
 .page{
     display: flex;
     /* border: 1px dotted green; */
     /* height: auto; */
+}
+.wsidebar{
+    flex-direction: row-reverse;
 }
 
 .home{
@@ -139,13 +145,13 @@ p ol{
     width: 60%;
     margin-bottom: 0;
 }
-.login-link{
+/* .login-icon{
     background-image: url(../../res/img/log_icon.png);
     max-width: 30px;
     max-height: 30px;
     width: 7vw;
     height: 7vw;
-}
+} */
 .home-banner-split .home-banner-button{
     width: 25%;
     height: 50px;
@@ -224,3 +230,4 @@ p ol{
         border: 1px solid yellow;
     }
 }
+

@@ -41,12 +41,10 @@ body {
     font-size: 1.5em;
     text-align: center;
     margin-bottom: 20px;
-
 }
 
 .form-field {
     margin-bottom: 5px;
-
 }
 
 .form-field label {
@@ -81,7 +79,6 @@ body {
 .form-field small {
     color: var(--error-color);
 }
-
 
 /* button */
 .btn {

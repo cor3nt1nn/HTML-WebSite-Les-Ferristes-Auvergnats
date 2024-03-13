@@ -155,7 +155,6 @@ header{
     }
     .navbar a.active{
         color: var(--yellow-logo);
-        font-weight: bold;
         transform: translateX(10px);
     }
     .navbar.open{

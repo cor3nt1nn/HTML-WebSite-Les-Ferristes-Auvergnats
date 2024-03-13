@@ -88,23 +88,7 @@ footer{
   font-size:13px;
   color:#aaa;
 }
-/* ICON DE CHAT */
-.chaticon {
-    z-index:10001;
-    width: 15%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    opacity: 1;
-    transition: opacity .7s;
-}
-.chaticon.scrolled {
-    opacity: 0.15;
-}
-.chaticon:hover{
-    opacity: 1;
-    transition: opacity .2s;
-}
+
 
 @media(min-width: 1300px){
     .footer-navbar{

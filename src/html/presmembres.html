@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/sidebar.css">
     <link rel="stylesheet" href="../css/member.css">
+    <link rel="stylesheet" href="../css/chat.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -56,7 +57,15 @@
     </header>
     
     <!-- ICON DE CHAT -->
-    <img class="chaticon" src="../../res/img/chat-logo.png" alt="">
+    <a class="chaticon" href="#"></a>
+	<div class="chat">
+		<div class="chat-msg"></div>
+		<div class="chat-textbox">
+			<textarea class="chatbox" id="message" placeholder="Entrez votre message ici..." rows="1"></textarea>
+			<a href="#" class="send-btn"></a>
+			</div>
+		</div>
+	</div>
     <div class="page">
         <!-- <nav class="sidebar">
             <div class="bubble">
@@ -64,53 +73,48 @@
                 <div class="sidebar-content"></div>
             </div>
         </nav> -->
-        <main>
+        <main class="nohome">
             <h1>Organigramme des Membres du Club</h1>
             <div class="memberlist">
                 <div class="member">
-                    <img class="memberimg" src="../../res/img/homme.jpg" alt="">
+                    <img class="memberimg" src="../../res/img/user_undefined.png" alt="">
                     <ul class="memberinfo">
                         <li class="membername">MARTINS Pierrick</li>
                         <li>Président du Club</li>
                         <li>-80kg</li>
                     </ul>
-                    <div class="contactmember"> 07589525525</div>
                 </div>
                 <div class="member">
-                    <img class="memberimg" src="../../res/img/trans.webp" alt="">
+                    <img class="memberimg" src="../../res/img/user_undefined.png" alt="">
                     <ul class="memberinfo">
                         <li class="membername">VILLEDIEU Maxance</li>
                         <li>Vice-Président/Trésorier</li>
                         <li>-90kg</li>
                     </ul>
-                    <div class="contactmember"> 07589525525</div>
                 </div>
                 <div class="member">
-                    <img class="memberimg" src="../../res/img/femme.jpg" alt="">
+                    <img class="memberimg" src="../../res/img/user_undefined.png" alt="">
                     <ul class="memberinfo">
                         <li class="membername">BESQUEUT Corentin</li>
                         <li>Secrétaire</li>
                         <li>-70kg</li>
                     </ul>
-                    <div class="contactmember"> 07589525525</div>
                 </div>
                 <div class="member">
-                    <img class="memberimg" src="../../res/img/vieille.png" alt="">
+                    <img class="memberimg" src="../../res/img/user_undefined.png" alt="">
                     <ul class="memberinfo">
                         <li class="membername">VIGOUROUX Nathan</li>
                         <li>Membre du Bureau</li>
                         <li>-80kg</li>
                     </ul>
-                    <div class="contactmember"> 07589525525</div>
                 </div>
                 <div class="member">
-                    <img class="memberimg" src="../../res/img/enfant.png" alt="">
+                    <img class="memberimg" src="../../res/img/user_undefined.png" alt="">
                     <ul class="memberinfo">
                         <li class="membername">BONNETAIN Celine</li>
                         <li>Membre du Bureau</li>
                         <li>-60kg</li>
                     </ul>
-                    <div class="contactmember"> 07589525525</div>
                 </div>
             </div>
             
@@ -156,5 +160,6 @@
     </footer>
     <!-- SCRIPTS -->
     <script src="../js/base.js"></script>
+    <script src="../js/chat.js"></script>
 </body>
 </html>

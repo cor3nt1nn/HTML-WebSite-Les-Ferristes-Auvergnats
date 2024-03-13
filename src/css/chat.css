@@ -1,0 +1,77 @@
+.chaticon {
+    background-image: url("../../res/img/chat-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 19%;
+    height: 13%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    transition: opacity .7s;
+    cursor: pointer; 
+    z-index: 11000001; 
+}
+.chaticon.scrolled {
+    opacity: 0.15;
+}
+.chaticon:hover{
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+.chat{
+    width: 25%;
+    height: 50%;
+    background: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    z-index: 11000001;
+    position: fixed;
+    bottom: 15%;
+    right: 2%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+}
+.chat.open{
+    display: flex;
+}
+
+.chat .chat-msg{
+    height: 92%;
+    width: 100%;
+    background-color: rgb(195, 195, 195);
+    border: 2px solid black;
+    margin-bottom: 5px;
+}
+
+.chat .chat-textbox{
+    height: 8%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chat .chat-textbox .chatbox{
+    width: 80%;
+    height: 90%;
+    margin-right: 5px;
+    background-color: white;
+    resize: none;
+    font-size: 100%;
+}
+
+.chat .chat-textbox .send-btn{
+    width: 3vw;
+    height: 3vh;
+    margin: auto;
+    background-image: url("../../res/img/chat-send-btn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1000000001;
+}

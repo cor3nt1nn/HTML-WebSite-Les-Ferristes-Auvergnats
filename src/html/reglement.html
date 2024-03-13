@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/chat.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -54,8 +55,7 @@
         <a class=menuicon></a>
     </header>
     
-    <!-- ICON DE CHAT -->
-    <img class="chaticon" src="../../res/img/chat-logo.png" alt="">
+    
     <div class="page wsidebar">
         <nav class="sidebar">
             <div class="bubble">
@@ -269,7 +269,17 @@
            </p>
         </main>
     </div>
-    <!-- FOOTER -->
+    <!-- ICON DE CHAT -->
+    <a class="chaticon" href="#"></a>
+	<div class="chat">
+		<div class="chat-msg"></div>
+		<div class="chat-textbox">
+			<textarea class="chatbox" id="message" placeholder="Entrez votre message ici..." rows="1"></textarea>
+			<a href="#" class="send-btn"></a>
+			</div>
+		</div>
+	</div>
+        <!-- FOOTER -->
     <footer>
         <div class="footer-icon-container">
             <img class=icon-navbar src="../../res/img/envelope-regular-156.png" alt="Mail">
@@ -309,5 +319,6 @@
     </footer>
     <!-- SCRIPTS -->
     <script src="../js/base.js"></script>
+    <script src="../js/chat.js"></script>
 </body>
 </html>

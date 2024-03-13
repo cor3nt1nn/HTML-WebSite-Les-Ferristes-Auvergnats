@@ -108,10 +108,10 @@ const debounce = (fn, delay = 100) => { //function to delay the checkup -> runna
 };
 form.addEventListener('input', debounce(function(e) {
 	switch (e.target.id) {
-		case 'username':
+		case 'username2':
 			checkUsrName();
 			break;
-		case 'userpwd':
+		case 'userpwd2':
 			checkPass();
 			break;
 		default:
