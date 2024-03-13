@@ -23,17 +23,19 @@ a{
 }
 .page{
     display: flex;
-    height: auto;
+    /* border: 1px dotted green; */
+    /* height: auto; */
 }
 .home{
     display: block;
     padding: 50px;
-    height: 1500px;
+    /* height: 1500px; */
 }
 main{
     position: relative;
     padding: 50px;
     flex: 2;
+    /* border: 1px dotted red; */
     /* height: 1000px; */
 }
 body{
@@ -86,13 +88,12 @@ p ol{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* height: 50vh; */
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 30px;
     padding: 0px 0px 40px 40px;
     align-items: start;
-    
+    /* border: 1px dotted blue; */
 }
 .page .home_banniere h1{
     text-align: left;
