@@ -53,6 +53,7 @@ font-family: "kanit-sb";
     }
 
     &:hover .content{
+      padding: 10%;
       opacity: 1;
       transform: translatey(0%);
       visibility: visible;
