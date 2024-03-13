@@ -113,12 +113,12 @@ p ol{
     margin-top: 0;
     padding-left: 40px;
     color: #fff;
-    text-shadow: 12px 12px 12px rgb(0, 0, 0);
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
 }
 .page .home_banniere h3 b{
     color: #dcc214;
     font-family: "kanit-b";
-    text-shadow: 12px 12px 12px rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 .page .home_banniere h4{
     text-align: left;
@@ -127,7 +127,7 @@ p ol{
     margin-top: 0;
     padding-left: 40px;
     color: #fff;
-    text-shadow: 12px 12px 12px rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 .home-banner-split{
