@@ -1,6 +1,7 @@
 .sidebar{
     margin-top: 5%;
-    display: none;
+    margin-left: 15px;
+    display: flex;
 }
 .bubble{
     margin-top: 10%;
@@ -31,9 +32,12 @@
     border-bottom-right-radius: 10px;
     line-height: 30px;    
 }
-
-@media(min-width: 1300px) {
-    .sidebar{
-        display: flex   ;
+@media screen and (max-width: 1273px) {
+    .bubble{
+        margin-top: 0%;
+        margin-right: 15px;
+    }
+    .sidebar div {
+        max-width: 100%;
     }
 }

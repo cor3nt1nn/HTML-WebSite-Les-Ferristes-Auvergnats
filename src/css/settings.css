@@ -26,6 +26,7 @@ a{
     /* border: 1px dotted green; */
     /* height: auto; */
 }
+
 .home{
     display: block;
     padding: 50px;
@@ -166,13 +167,18 @@ p ol{
     main{
         padding: 0px;
     }
+    .nohome{
+        padding: 30px;
+    }
     .page {
         flex-direction: column;
     }
     .home{
         padding: 20px;
     }
-    
+    .wsidebar{
+        flex-direction: column-reverse;
+    }
     .home_banniere {
         margin-left: 0px;
         margin-right: 0px;
