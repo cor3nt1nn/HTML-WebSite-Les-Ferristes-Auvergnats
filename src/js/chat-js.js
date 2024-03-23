@@ -1,7 +1,7 @@
-const sendButton = document.querySelector("button[id=chat-send]")
-const text = document.getElementById("msg-content");
-const chatbox = document.getElementById("conversation");
-
+const sendButton = document.querySelector(".send-btn");//document.querySelector("button[id=chat-send]");
+const text = document.getElementById("msg-container");
+const ch = document.getElementById("message"); //document.getElementById("conversation");
+/*
 const showError = (input, message) => {
 	// get the form-field element
 	const formField = input.parentElement;
@@ -13,9 +13,9 @@ const showError = (input, message) => {
 	const error = formField.querySelector('small');
 	error.textContent = message;
 	sendButton.disabled = true;
-};
+};*/
 
-const showSuccess = (input, message) => {
+/*const showSuccess = (input, message) => {
 	// get the form-field element
 	const formField = input.parentElement;
 
@@ -27,14 +27,14 @@ const showSuccess = (input, message) => {
 	const error = formField.querySelector('small');
 	error.textContent = message; //validation action
 	sendButton.disabled = false;
-}
+}*/
 
 
 
 
 const isVoid = value => value === "" ? false : true;
 
-const debounce = (fn, delay = 100) => { //function to delay the checkup -> runnable in java
+/*const debounce = (fn, delay = 100) => { //function to delay the checkup -> runnable in java
 	let timeoutId;
 	return (...args) => {
 		// cancel the previous timer
@@ -46,7 +46,7 @@ const debounce = (fn, delay = 100) => { //function to delay the checkup -> runna
 			fn.apply(null, args)
 		}, delay);
 	};
-};
+};*/
 var index;
 function GETAll() {
 	$.getJSON("/htbin/chatget.py")
@@ -59,7 +59,7 @@ function GETAll() {
 				var info = JSON.parse(array[i]);
 				var msg = "[" + info["date"] + "-" + info["time"] + "]: " + info["user"] + " > " + info["msg"];
 				newNode.innerHTML = msg;
-				chatbox.appendChild(newNode);
+				ch.appendChild(newNode);
 			}
 		});
 }
@@ -71,19 +71,20 @@ function GETLast() {
 			i = (array.length - index == 1) ? (i = index + 1) : (i = array.length - index);
 			var rNode = document.createElement('p');
 			rNode.innerHTML = "AUTO REFRESH";
-			chatbox.appendChild(rNode);
+			ch.appendChild(rNode);
 			for (let y = index; y < i; y++) {
 				var newNode = document.createElement('p');
 				var info = JSON.parse(array[y]);
 				var msg = "[" + info["date"] + "-" + info["time"] + "]: " + info["user"] + " > " + info["msg"];
 				newNode.innerHTML = msg;
-				chatbox.appendChild(newNode);
+				ch.appendChild(newNode);
 
 			} index = array.length;
 		});
 
 }
 GETAll(); // AT FIRST LOGIN
+
 setInterval(function() { GETLast(); }, 30000); // refresh chat every 30 sec
 text.addEventListener("input", debounce(function() {
 	if (isVoid(text.value) == false) {
