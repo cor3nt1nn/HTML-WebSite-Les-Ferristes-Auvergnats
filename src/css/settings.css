@@ -79,7 +79,18 @@ p ol{
     list-style: circle;
     text-align: center;
 }
+.article-images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.article-images img{
+    height: 400px;
+    width: auto;
+    border-radius: 20px;
+}
 .infoutils{
     list-style: none;
     padding: 0;
