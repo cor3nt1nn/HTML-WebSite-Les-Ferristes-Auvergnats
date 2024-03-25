@@ -45,6 +45,9 @@ footer{
     margin: 20px 10px;
     transition: all .50s ease;
 }
+.footer-icon-container a{
+    text-decoration: none;
+}
 .footer-tooltip {
     position: absolute;
     display: none;
