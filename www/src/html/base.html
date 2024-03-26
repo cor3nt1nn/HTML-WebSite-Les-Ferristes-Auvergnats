@@ -60,10 +60,11 @@
     <!-- ICON DE CHAT -->
     <a class="chaticon" href="#"></a>
 	<div class="chat">
-		<div class="chat-msg"></div>
+		<div class="chat-msg" id="msg-container">
+		</div>
 		<div class="chat-textbox">
 			<textarea class="chatbox" id="message" placeholder="Entrez votre message ici..." rows="1"></textarea>
-			<a href="#" class="send-btn"></a>
+			<a href="#" class="send-btn" id="chat-send"></a>
 			</div>
 		</div>
 	</div>
@@ -126,5 +127,11 @@
     <!-- SCRIPTS -->
     <script src="../js/base.js"></script>
     <script src="../js/chat.js"></script>
+    <script src="/chat-js.js"></script>
+    <noscript>
+		<p>
+			<center>Ce site utilise JavaScript</center>
+		</p>
+	</noscript>
 </body>
 </html>
