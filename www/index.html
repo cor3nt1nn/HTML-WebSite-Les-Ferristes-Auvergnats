@@ -13,76 +13,20 @@
 <link rel="stylesheet" href="src/css/slider.css">
 <link rel="stylesheet" href="src/css/logo_carousel.css">
 <link rel="stylesheet" href="src/css/chat.css">
-<link rel="stylesheet" href="src/css/form2.css">
+<!-- <link rel="stylesheet" href="src/css/form2.css"> -->
 <link rel="shortcut icon" href="res/img/logo_ferristes.png" />
 </head>
 <body>
-	<div id="form1" class="sign-form signinbox">
-		<form id="signup" class="form">
-			<div class="form-field">
-				<label for="firstname">Prénom</label>
-				<input type="text" name="firstname" id="firstname" required minlength="1" placeholder="Entrez votre prénom">
-				<small></small>
-			</div>
-			<div class="form-field">
-				<label for="lastname">Nom</label>
-				<input type="text" name="lastname" id="lastname" required minlength="1" placeholder="Entrez votre nom">
-				<small></small>
-			</div>
-			
-			<div class="form-field">
-				<label for="birthdate">Date de Naissance</label>
-				<input type="text" name="birthdate" id="birthdate" placeholder="DD/MM/YYYY (facultatif)">
-				<small></small>
-			</div>
-			<div class="form-field">
-				<label for="username">Pseudo</label>
-				<input type="text" name="username" id="username2" required minlength="6" placeholder="Entrez votre pseudo">
-				<small></small>
-			</div>
-			<div class="form-field">
-				<label for="userpwd">Mot de Passe</label>
-				<input type="password" name="userpwd" id="userpwd" required minlength="12" placeholder="Entrez votre Mot de Passe">
-				<small></small>
-			</div>
-			<div class="form-field">
-				<label for="useremail">Email</label>
-				<input type="text" name="useremail" id="useremail" required placeholder="Entrez votre adresse email">
-				<small></small>
-			</div>
-			<input type="submit" value="S'enregistrer" class="btn-form" id="sub">
-   		</form>
-   		<a class="link login-link" href="#">J'ai déjà un compte</a>
-	</div>
-
-	<div id="form2" class="sign-form loginbox">
-		<form id="login" class="form login">
-			<div class="form-field">
-				<label for="username">Pseudo</label> 
-				<input type="text"
-					name="username" id="username" required minlength="6"
-					placeholder="Entrez votre pseudo"> 
-					<small></small>
-			</div>
-			<div  class="form-field">
-				<label for="userpwd">Mot de Passe</label> <input type="password"
-					name="userpwd" id="userpwd" required minlength="12"
-					placeholder="Entrez votre Mot de Passe"> <small></small>
-			</div  class="form-field">
-			<input type="submit" value="S'enregistrer" class="btn-form" id="sub">
-		</form>
-		<a class="link signin-link" href="#">Je crée un compte</a>
-	</div>
-	<script src="src/js/login.js"></script>
-	<script src="src/js/register.js"></script>
+	<!-- <script src="src/js/login.js"></script>
+	<script src="src/js/register.js"></script> -->
 	<!-- HEADER -->
 	<header>
 		<a href="index.html" class="banner-logo"></a>
 
 		<div class="icon-container">
-			<a class="tooltip-a login-click" href="#"> <img
-				class=icon-navbar src="res/img/log_icon.png" alt="Login">
-			</a>
+			<a class="tooltip-a" href="src/html/login.html">
+                <img class=icon-navbar src="res/img/log_icon.png" alt="Login">
+            </a>
 			<a target="_blank"
 				href="mailto:ferristes.auvergnats@gmail.com "> <img
 				class=icon-navbar src="res/img/envelope-regular-156.png"
@@ -111,11 +55,6 @@
 						<li><a href="src/html/reglement.html">Règlement Intérieur</a></li>
 					</ul></li>
 				<li><a href="src/html/licence.html">SE LICENCIER</a></li>
-				<li class="submenu"><a class="developp" href="#">RESULTATS</a>
-					<ul class="sub-menu">
-						<li><a href="#">Résultat Tournoi</a></li>
-						<li><a href="#">Classement</a></li>
-					</ul></li>
 				<li><a href="src/html/infoutiles.html">NOUS CONTACTER</a></li>
 			</ul>
 		</nav>

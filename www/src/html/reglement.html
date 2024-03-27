@@ -46,14 +46,7 @@
                         <li><a href="reglement.html" class="active">Règlement Intérieur</a></li>
                     </ul>
                 </li>
-                <li><a href="#">SE LICENCIER</a></li>
-                <li class="submenu">
-                    <a class="developp" href="#">RESULTATS</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">Résultat Tournoi</a></li>
-                        <li><a href="#">Classement</a></li>
-                    </ul>
-                </li>
+                <li><a href="licence.html">SE LICENCIER</a></li>
                 <li><a href="infoutiles.html">NOUS CONTACTER</a></li>
             </ul>
         </nav>
@@ -276,14 +269,16 @@
     </div>
     <!-- ICON DE CHAT -->
     <a class="chaticon" href="#"></a>
-	<div class="chat">
-		<div class="chat-msg"></div>
-		<div class="chat-textbox">
-			<textarea class="chatbox" id="message" placeholder="Entrez votre message ici..." rows="1"></textarea>
-			<a href="#" class="send-btn"></a>
-			</div>
-		</div>
-	</div>
+    <div class="chat">
+        <div class="chat-msg" id="msg-container">
+        </div>
+        <div class="chat-textbox">
+            <textarea class="chatbox" id="message" placeholder="Entrez votre message ici..." rows="1"></textarea>
+            <small></small>
+            <a href="#" class="send-btn" id="chat-send"></a>
+            </div>
+        </div>
+    </div>
         <!-- FOOTER -->
     <footer>
         <div class="footer-icon-container">
@@ -314,19 +309,13 @@
                 </li>
                 <li>
                 <li><a href="#">SE LICENCIER</a></li>
-                <li class="submenuf">
-                    <a class="developpf" href="#">RESULTATS</a>
-                    <ul class="sub-menu-f">
-                        <li><a href="#">Résultat Tournoi</a></li>
-                        <li><a href="#">Classement</a></li>
-                    </ul>
-                </li>
                 <li><a href="infoutiles.html">NOUS CONTACTER</a></li>
             </ul>
         </nav>
         <p class="copyright">Les Ferristes Auvergnats © 2024</p>
     </footer>
     <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/base.js"></script>
     <script src="../js/chat.js"></script>
     <script src="../js/chat-js.js"></script>

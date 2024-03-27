@@ -50,6 +50,7 @@ header{
     z-index: 10000;
     border: 2px outset yellow;
 }
+
 .sub-menu li{
     line-height: 30px
 }
@@ -88,7 +89,6 @@ header{
     transition: all .50s ease;
     text-decoration: none;
     z-index: 10;
-    
 }
 
 .navbar a:hover{

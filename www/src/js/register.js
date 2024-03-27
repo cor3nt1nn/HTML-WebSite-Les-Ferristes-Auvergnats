@@ -135,6 +135,7 @@ const showError = (input, message) => {
 	// show the error message
 	const error = formField.querySelector('small');
 	error.textContent = message;
+	error.style.color="red";
 	btn.disabled = true;
 };
 
@@ -149,6 +150,7 @@ const showSuccess = (input) => {
 	// hide the error message
 	const error = formField.querySelector('small');
 	error.textContent = 'Valide'; //validation action
+	error.style.color = "#66ff00";
 	btn.disabled = false;
 }
 
@@ -169,6 +171,7 @@ form.addEventListener('submit', function(e) {
 	// submit to the server if the form is valid
 	if (isFormValid) {
 		$(this).unbind('submit').submit()
+		document.cookie = "name=" + usr_ + "; online=true";
 		alert("rebinded ! ");
 	}
 });
