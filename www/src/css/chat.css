@@ -43,9 +43,6 @@
 .chat .chat-msg{
     height: 92%;
     width: 100%;
-    /* background: rgb(0, 0, 0, 0.7); */
-    backdrop-filter: blur(20px);
-    /* color: white; */
     margin-bottom: 5px;
     overflow-y: auto;
     padding: 6%;
