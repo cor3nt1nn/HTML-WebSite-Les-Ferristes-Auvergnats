@@ -1,17 +1,16 @@
 *{
     box-sizing: border-box;
     text-decoration: none;
-    color: #000000;
+    color: var(--mode-text);
     font-family: "kanit-l";
 }
 a{
-    color: #fff;
+    color: var(--text-color);
     text-decoration: underline;
 }
 
 :root{
-    --bg-color: #222327;
-    --text-color: #fff;
+    --text-color: #fefefe;
     --main-color: #29fd53;
     --grey-color: #7C7C7C;
     --brown-color: #92874ec6;
@@ -26,8 +25,6 @@ a{
 }
 .page{
     display: flex;
-    /* border: 1px dotted green; */
-    /* height: auto; */
 }
 .wsidebar{
     flex-direction: row-reverse;
@@ -46,8 +43,8 @@ main{
     /* height: 1000px; */
 }
 body{
-    background: var(--bgd-color);
-    color: var(--bg-color);
+    background: var(--bg-color);
+    /* color: var(--bg-color); */
     padding-top: 20vh;
     text-align: justify;
 }
@@ -58,19 +55,19 @@ p{
 main h1{
     font-size: 35px;
     text-align: center;
-    color: #000000;
+    color: var(--mode-text);
     font-family: "kanit-b";
 }
 main h2{
     font-size: 25px;
     text-align: center;
-    color: #000000;
+    color: var(--mode-text);
     font-family: "kanit-sb";
 }
 h3{
     font-size: 20px;
     text-align: left;
-    color: #000000;
+    color: var(--mode-text);
     font-family: "kanit-sb";
 }
 p ol{
@@ -130,7 +127,7 @@ p ol{
     font-family: "kanit-sb";
     margin-top: 0;
     padding-left: 40px;
-    color: #fff;
+    color: var(--text-color);
     text-shadow: 4px 4px 4px rgb(0, 0, 0);
 }
 .page .home_banniere h3 b{
@@ -144,7 +141,7 @@ p ol{
     font-family: "kanit-t";
     margin-top: 0;
     padding-left: 40px;
-    color: #fff;
+    color: var(--text-color);
     text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
@@ -242,3 +239,16 @@ p ol{
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    :root{
+        --bg-color: #000000;
+        --mode-text: #fefefe;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root{
+        --bg-color: #fefefe;
+        --mode-text: #000000;
+    }
+}

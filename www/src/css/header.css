@@ -65,7 +65,7 @@ header{
     display: none;
     background-color: rgba(0, 0, 0, 1);
     font-family: "kanit";
-    color: #fff;
+    color: var(--text-color);
     padding: 5px 30px;
     border-radius: 5px;
     left: 30%;
@@ -176,3 +176,4 @@ header{
         margin-top: 0px; 
     }
 }
+

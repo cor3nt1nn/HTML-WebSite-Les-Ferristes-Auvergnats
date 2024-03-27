@@ -1,7 +1,7 @@
 .btn{
     padding: .5rem 1rem;
     background: black;
-    color: white;
+    color: var(--text-color);
     border: 1px solid transparent;
     border-radius: .25rem;
     text-decoration: none;
@@ -33,15 +33,18 @@
     height: 260px;
     margin: 30px;
     border-radius: 10px;
-    background: rgb(255, 255, 255);
+    background: var(--bg-color);
     position: relative;
+    border: 2px solid var(--mode-text);
 }
 .recent-post-container .sidebarhome .long{
-    height: 400px;
+    height: max-content;
     margin: 30px;
     border-radius: 10px;
-    background: rgb(255, 255, 255);
+    padding-bottom: 30px;
+    background: var(--bg-color);
     position: relative;
+    border: 2px solid var(--mode-text);
 }
 .recent-post-container .sidebarhome .long .licelogo{
     height: 200px;
@@ -70,7 +73,7 @@
     padding: .5rem 1rem;
     width: 60%;
     text-align: center;
-    color: white;
+    color: var(--text-color);
     border: 1px solid transparent;
     border-radius: .25rem;
     text-decoration: none;
@@ -90,7 +93,7 @@
 }
 .recent-post-container .recent-post .recent-post-title{
     margin: 20px;
-    color: black;
+    color: var(--mode-text);
     text-align: left;
     text-decoration: none;
 }
@@ -99,11 +102,12 @@
     /* height: min-content; */
     margin: 10px auto;
     border-radius: 10px;
-    background: rgb(255, 255, 255);
+    background: var(--bg-color);
     position: relative;
     /* border: 1px dotted violet; */
     display: flex;
     flex-direction: row;
+    border: 2px solid var(--mode-text);
 }
 .recent-post-container .recent-post .post .preview-text{
     padding-top: 0px;
@@ -113,13 +117,14 @@
     bottom: 10px;
     right: 20px;
     border: 1px solid black;
-    background: transparent;
+    background: var(--mode-text);
     border-radius: 5px;
-    color: black;
+    color: var(--bg-color);
+    border: 1px solid var(--text-color);
 }
 .recent-post-container .recent-post .post .read-more:hover{
-    background: black;
-    color: white;
+    color: var(--mode-text);
+    background: var(--bg-color);
     transition: .25s;
     transform: translateX(3px);
 }
@@ -127,15 +132,15 @@
     margin-bottom: 10px;
 }
 .recent-post-container .recent-post .post .preview-title a{
-    color: black ;
+    color: var(--mode-text);
     text-decoration: none;
 }
 .recent-post-container .recent-post .post .preview-title a:hover{
-    color: rgb(79, 77, 77);
+    font-style: oblique;
 }
 
 .recent-post-container .recent-post h1{
-    color: black;
+    color: var(--mode-text);
     text-align: left;
     margin: 0;
 }

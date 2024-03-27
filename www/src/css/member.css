@@ -39,7 +39,7 @@
 }
 
 .memberinfo li{
-    color: white;
+    color: var(--text-color);
 }
 
 @media screen and (max-width: 1300px) {
