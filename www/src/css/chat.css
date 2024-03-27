@@ -24,8 +24,7 @@
 .chat{
     width: 25%;
     height: 50%;
-    background: white;
-    border: 2px solid black;
+    background-image: url(../../res/img/form_bg.png);
     border-radius: 15px;
     z-index: 11000001;
     position: fixed;
@@ -34,7 +33,8 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    padding: 8px;
+    padding: 2%;
+    border: 2px solid rgb(255, 255, 255);
 }
 .chat.open{
     display: flex;
@@ -43,33 +43,47 @@
 .chat .chat-msg{
     height: 92%;
     width: 100%;
-    background-color: rgb(195, 195, 195);
-    border: 2px solid black;
+    /* background: rgb(0, 0, 0, 0.7); */
+    backdrop-filter: blur(20px);
+    /* color: white; */
     margin-bottom: 5px;
     overflow-y: auto;
-    padding: 2%;
+    padding: 6%;
 }
-
+.chat .chat-msg p{
+    color: white;
+}
 .chat .chat-textbox{
-    height: 8%;
+    height: 10%;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 25%;
+    padding-top: 4%;
 }
 
 .chat .chat-textbox .chatbox{
     width: 80%;
     height: 90%;
     margin-right: 5px;
-    background-color: white;
+    background-color: transparent;
+    color: white;
     resize: none;
     font-size: 100%;
+    border-radius: 9px;
+    border: 2px solid white;
+    padding: 2%;
+    outline: none;
+}
+
+.chat .chat-textbox .chatbox::placeholder{
+    color: white;
 }
 
 .chat .chat-textbox .send-btn{
-    width: 3vw;
-    height: 3vh;
+    width: 25%;
+    height: 75%;
     margin: auto;
     background-image: url("../../res/img/chat-send-btn.png");
     background-size: contain;
