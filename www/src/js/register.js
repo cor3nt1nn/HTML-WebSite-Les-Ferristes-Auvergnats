@@ -170,9 +170,9 @@ form.addEventListener('submit', function(e) {
 
 	// submit to the server if the form is valid
 	if (isFormValid) {
-		$(this).unbind('submit').submit()
-		document.cookie = "name=" + usr_ + "; online=true";
-		alert("rebinded ! ");
+		$(this).unbind('submit').submit();
+	    document.cookie = "name=" + usr_ + "; online=true;SameSite=None; secure=true; expires=0; path=/";
+		//window.location.replace("../index.html");
 	}
 });
 

@@ -5,7 +5,7 @@ const form = document.getElementById("login");
 const submitter = document.querySelector("button[id=sub]");
 const errorMsg = document.querySelector("small[id=error-msg]");
 const isRequired = value => value === '' ? false : true;
-
+let isLogged = false;
 const checkUsrName = () => {
 	let valid = false;
 	const usr_ = user.value.trim();
@@ -66,9 +66,9 @@ form.addEventListener('submit', function(e) {
 
 	// validate forms
 	let pass_ = checkPass(),
-		usr_ = checkUsrName()
+		usr_ = checkUsrName();
 	isFormValid = pass_ && usr_;
-
+	const xhr = new XMLHttpRequest();
 	// submit to the server if the form is valid
 	if (!isFormValid) {
 		// prevent the form from submitting
@@ -76,12 +76,13 @@ form.addEventListener('submit', function(e) {
 	} else {
 		//if succeeded let use XHR
 		const f = new FormData(form, submitter);
-		let xhr = new XMLHttpRequest();
 		xhr.open("post", "/htbin/login.py", false); // [false, usr_, pass_]
 		xhr.send(f);
+
 		if (xhr.responseText.startsWith("Bonjour")) {
-			document.cookie = "name=" + usr_ + "; online=true";
-			window.location.href = "index.html";
+			document.cookie = "name=" + usr_ + "; online=true;SameSite=None; secure=true; expires=0; path=/";
+			
+			isLogged = true;
 		} else showError(errorMsg, "Erreur dans les identifiants");
 
 	}
@@ -120,3 +121,5 @@ form.addEventListener('input', debounce(function(e) {
 			break;
 	}
 }));
+
+

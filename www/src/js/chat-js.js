@@ -78,9 +78,9 @@ function GETLast() {
 		});
 
 }
-/*if (cookie != "") {*/
+if (cookie != "") {
 	GETAll(); // AT FIRST CLICK ON PAGE
-
+	sendButton.disabled = false;
 	setInterval(function() { GETLast(); }, 5000); // refresh chat every 5 sec
 	text.addEventListener("input", debounce(function() {
 		if (isVoid(text.value) == false) {
@@ -102,4 +102,8 @@ function GETLast() {
 		GETLast();
 
 	});
-/*}*/
+}else{
+	sendButton.disabled = true;
+	ch.textContent = "Vous devez être connecté pour avoir accès au chat !";
+	ch.style.color = 'white';
+}
