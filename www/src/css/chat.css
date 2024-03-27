@@ -46,6 +46,7 @@
     margin-bottom: 5px;
     overflow-y: auto;
     backdrop-filter: blur(20px);
+    border-radius: 5px;
     padding: 6%;
 }
 .chat .chat-msg p{
