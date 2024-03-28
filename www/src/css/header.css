@@ -169,6 +169,7 @@ header{
     .navbar.open{
         display: flex;
         transition: all .50s ease;
+        border: 1px solid yellow;
     }
     .banner-logo{
         max-width: 90px;

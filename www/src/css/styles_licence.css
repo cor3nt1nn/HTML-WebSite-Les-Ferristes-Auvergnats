@@ -125,7 +125,6 @@ font-family: "kanit-sb";
         color: var(--text-color);
         font-size: 1.8rem;
     }
-
     &:hover {
       flex: 1 0 40vw;
       box-shadow: 1px 3px 15px #7645d8;
@@ -133,6 +132,18 @@ font-family: "kanit-sb";
     }
 
     &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+
+    &:focus {
+      flex: 1 0 40vw;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:focus .content {
       opacity: 1;
       transform: translatey(0%);
       visibility: visible;
