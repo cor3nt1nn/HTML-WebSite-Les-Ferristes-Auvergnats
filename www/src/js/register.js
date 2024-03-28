@@ -172,7 +172,6 @@ form.addEventListener('submit', function(e) {
 	if (isFormValid) {
 		$(this).unbind('submit').submit();
 	    document.cookie = "name=" + usr_ + "; online=true;SameSite=None; secure=true; expires=0; path=/";
-		//window.location.replace("../index.html");
 	}
 });
 

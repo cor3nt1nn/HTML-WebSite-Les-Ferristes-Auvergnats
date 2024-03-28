@@ -76,14 +76,14 @@ form.addEventListener('submit', function(e) {
 	} else {
 		//if succeeded let use XHR
 		const f = new FormData(form, submitter);
-		xhr.open("post", "/htbin/login.py", false); // [false, usr_, pass_]
+		xhr.open("post", "/htbin/login.py", false); // [false, usr_, pass_])
 		xhr.send(f);
 
 		if (xhr.responseText.startsWith("Bonjour")) {
 			document.cookie = "name=" + usr_ + "; online=true;SameSite=None; secure=true; expires=0; path=/";
-			
+			alert("Successfully logged !");
 			isLogged = true;
-		} else showError(errorMsg, "Erreur dans les identifiants");
+		} else alert("Credentials error");//showError(errorMsg, "Erreur dans les identifiants");
 
 	}
 	//----------------------------------------- CATCH ERROR FROM CONNECTION 

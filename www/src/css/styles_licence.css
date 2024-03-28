@@ -46,7 +46,7 @@ font-family: "kanit-sb";
       
     }
 
-    &:hover, &:active{
+    &:hover, &:active, &:focus-visible{
       flex: 0 0 250px;
       box-shadow: 1px 3px 15px #7645d8;
       transform: translatey(-30px);
@@ -58,20 +58,23 @@ font-family: "kanit-sb";
       transform: translatey(0%);
       visibility: visible;
     }
-    
-     &:focus{
-      flex: 0 0 250px;
-      box-shadow: 1px 3px 15px #7645d8;
-      transform: translatey(-30px);
-    }
-
-    &:focus .content{
+    &:active .content{
+      padding: 10%;
       opacity: 1;
       transform: translatey(0%);
       visibility: visible;
     }
+     &:focus-visible .content{
+      padding: 10%;
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+
   }
+  
 }
+
 }
 
 @media screen and (min-width: 551px) {
