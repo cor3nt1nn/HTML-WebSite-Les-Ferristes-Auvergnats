@@ -4,6 +4,7 @@ const btn = document.querySelector("#sub");
 const form = document.getElementById("login");
 const submitter = document.querySelector("button[id=sub]");
 const errorMsg = document.querySelector("small[id=error-msg]");
+const connected = document.getElementById("connected");
 const isRequired = value => value === '' ? false : true;
 let isLogged = false;
 const checkUsrName = () => {
@@ -121,5 +122,11 @@ form.addEventListener('input', debounce(function(e) {
 			break;
 	}
 }));
-
+if(document.cookie==""){
+	connected.textContent = "Non connecté !";
+	connected.style.color = "red";
+}else {
+	connected.textContent = "Connecté";
+	connected.style.color = "green";
+}
 

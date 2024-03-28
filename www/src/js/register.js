@@ -5,8 +5,8 @@ const email = document.querySelector('#useremail');
 const date = document.querySelector("#birthdate");
 const user = document.querySelector("#username");
 const btn = document.querySelector("#sub");
-
 const form = document.querySelector('#signup');
+const connected = document.getElementById("connected");
 
 
 function containsNumbers(str) {
@@ -135,7 +135,7 @@ const showError = (input, message) => {
 	// show the error message
 	const error = formField.querySelector('small');
 	error.textContent = message;
-	error.style.color="red";
+	error.style.color = "red";
 	btn.disabled = true;
 };
 
@@ -171,7 +171,7 @@ form.addEventListener('submit', function(e) {
 	// submit to the server if the form is valid
 	if (isFormValid) {
 		$(this).unbind('submit').submit();
-	    document.cookie = "name=" + usr_ + "; online=true;SameSite=None; secure=true; expires=0; path=/";
+		document.cookie = "name=" + usr_ + "; online=true;SameSite=None; secure=true; expires=0; path=/";
 	}
 });
 
@@ -212,3 +212,10 @@ form.addEventListener('input', debounce(function(e) {
 			break;
 	}
 }));
+if (document.cookie == "") {
+	connected.textContent = "Non connecté !";
+	connected.style.color = "red";
+} else {
+	connected.textContent = "Connecté";
+	connected.style.color = "green";
+}
