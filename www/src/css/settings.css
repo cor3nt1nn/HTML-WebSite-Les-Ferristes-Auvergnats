@@ -64,6 +64,9 @@ main h2{
     color: var(--mode-text);
     font-family: "kanit-sb";
 }
+main a{
+    color: var(--mode-text);
+}
 h3{
     font-size: 20px;
     text-align: left;
@@ -171,13 +174,25 @@ p ol{
     box-shadow: 1px 1px 3px rgb(255, 255, 0);
     border: 1px solid yellow;
 }
-.home-banner-split .home-banner-button:hover{
+.home-banner-split .home-banner-button:hover,
+.home-banner-split .home-banner-button:focus{
     background-color: yellow;
     color: black;
-    transition: .5s; 
 }
 
+
 @media screen and (max-width: 1273px) {
+
+    .article-images{
+        flex-direction: column;
+    }
+    
+    .article-images img{
+        height: auto;
+        width: 80%;
+        margin: 5%
+    }
+
     main{
         padding: 0px;
     }

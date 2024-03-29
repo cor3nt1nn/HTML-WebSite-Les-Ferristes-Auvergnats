@@ -72,9 +72,14 @@ header{
     transform: translateX(-50%);
 }
 
-.icon-navbar:hover + .tooltip {
+.icon-navbar:hover + .tooltip{
     display: block;
 }
+
+.icon-navbar:focus + .tooltip{
+    display: block;
+}
+
 /* MENU CLIQUABLE */
 .navbar{
     display: none;

@@ -210,3 +210,21 @@
         height: 60%;
     }
 }
+
+@media (prefers-color-scheme: light){
+    .recent-post-container .recent-post .post .copyright-preview .dark{
+        visibility: hidden;
+    }
+    .recent-post-container .recent-post .post .date-preview .dark{
+        visibility: hidden;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    .recent-post-container .recent-post .post .copyright-preview .light{
+        visibility: hidden;
+    }
+    .recent-post-container .recent-post .post .date-preview .light{
+        visibility: hidden;
+    }
+}
