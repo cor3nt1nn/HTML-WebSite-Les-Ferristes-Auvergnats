@@ -1,0 +1,118 @@
+.home-banner{
+    background-image: url("../../../res/img/home_bannierep.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    padding: 0px 0px 40px 40px;
+    align-items: start;
+    border-radius: 30px 10px;
+}
+.home-banner h1{
+    text-align: left;
+    font-size: 5em;
+    font-family: "kanit-b";
+    margin-top: 0;
+    padding-top: 40px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    color: #dcc214;
+    
+}
+.home-banner h3{
+    text-align: left;
+    font-size: 2em;
+    font-family: "kanit-sb";
+    margin-top: 0;
+    padding-left: 40px;
+    color: var(--text-color);
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+.home-banner h3 b{
+    color: #dcc214;
+    font-family: "kanit-b";
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+.home-banner h4{
+    text-align: left;
+    font-size: 1.3em;
+    font-family: "kanit-t";
+    margin-top: 0;
+    padding-left: 40px;
+    color: var(--text-color);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.home-banner-split{
+    display: flex;
+    flex-direction: row;
+}
+.home-banner-split .home-banner-text{
+    width: 60%;
+    margin-bottom: 0;
+}
+.home-banner-split .home-banner-button{
+    width: 25%;
+    height: 50px;
+    display: flex;
+    font-size: 1.3em;
+    align-items: center;
+    margin: auto;
+    font-family: "kanit";
+    box-shadow: 1px 1px 3px rgb(255, 255, 0);
+    border: 1px solid yellow;
+}
+.home-banner-split .home-banner-button:hover,
+.home-banner-split .home-banner-button:focus{
+    background-color: yellow;
+    color: black;
+}
+
+@media screen and (max-width: 1273px) {
+    .home-banner {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        padding: 0px 10px 20px 10px;
+    }
+    
+    .home-banner h1{
+        font-size: 3em;
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        color: #dcc214;
+        text-align: center;
+    }
+    .home-banner h3{
+        text-align: center;
+        font-size: 1.5em;
+        padding-left: 0px;
+        text-shadow: 4px 4px 4px rgb(0, 0, 0);
+    }
+    .home-banner h4{
+        text-align: justify;
+        font-size: 1.1em;
+        padding: 10px;
+        text-shadow: 4px 4px 4px rgb(0, 0, 0);
+    }
+    
+    .home-banner-split {
+        flex-direction: column;
+    }
+    
+    .home-banner-split .home-banner-text {
+        width: 100%;
+    }
+    .home-banner-split .home-banner-button{
+        width: 80%;
+        height: 40px;
+        font-size: 1.1em;
+        align-items: center;
+        margin: auto;
+        box-shadow: 1px 1px 3px rgb(255, 255, 0);
+        border: 1px solid yellow;
+    }
+}

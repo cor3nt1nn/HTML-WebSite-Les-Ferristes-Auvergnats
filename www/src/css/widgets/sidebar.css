@@ -3,12 +3,6 @@
     margin-right: 25px;
     display: flex;
 }
-.bubble{
-    margin-top: 10%;
-}
-.bubble:hover{
-    transform: translateX(5px);
-}
 .sidebar div {
     max-width: 15vw;
     height: min-content;
@@ -31,6 +25,13 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     line-height: 30px;    
+}
+
+.bubble{
+    margin-top: 10%;
+}
+.bubble:hover{
+    transform: translateX(5px);
 }
 @media screen and (max-width: 1273px) {
     .bubble{

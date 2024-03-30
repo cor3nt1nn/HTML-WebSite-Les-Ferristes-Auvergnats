@@ -2,45 +2,19 @@
 footer{
     background-image: url(../../res/img/banniere.png);
     position: absolute;
+    right: 0;
+    left: 0;
     min-height: 120px;
     height: 20%;
-    z-index:100;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     align-content: space-between;
-    transition: all .50s ease;
-    margin-top: 70px;
-    right: 0;
-    left: 0;
+    justify-content: center;
 }
 
-.sub-menu-f {
-    display: none; 
-    position: absolute;
-    background: #222327;
-    padding: 10px;
-    border-radius: 5px;
-    list-style: none;
-    top: auto;
-    bottom: 45%;
-    border: 2px outset yellow;
-}
-.sub-menu-f li{
-    line-height: 30px
-}
-.sub-menu-f.open{
-    display: block;
-}
-
-/* CONTENEUR ICONES CONTACTS */
-.icon-navbar{
-    max-width: 30px;
-    max-height: 30px;
-    width: 7vw;
-    height: 7vw;
-}
+/* LOGOS CONTACTS */
 .footer-icon-container img{
     margin: 20px 10px;
     transition: all .50s ease;
@@ -48,6 +22,18 @@ footer{
 .footer-icon-container a{
     text-decoration: none;
 }
+
+.footer-icon{
+    max-width: 30px;
+    max-height: 30px;
+    width: 7vw;
+    height: 7vw;
+}
+.footer-icon:hover + .footer-tooltip {
+    display: block;
+}
+
+/* Info-Bulle au Survol des Icones */
 .footer-tooltip {
     position: absolute;
     display: none;
@@ -60,10 +46,8 @@ footer{
     left: 50%;
     transform: translateX(-50%);
 }
-.icon-navbar:hover + .footer-tooltip {
-    display: block;
-}
-/* MENU FOOTER */
+
+/* Barre de Navigation */
 .footer-navbar{
     display: none;
     list-style: none;
@@ -86,6 +70,27 @@ footer{
     color: var(--yellow-logo);
     font-family: "kanit";
 }
+
+/* Sous-Menu */
+.sub-menu-f {
+    display: none; 
+    position: absolute;
+    background: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    top: auto;
+    bottom: 45%;
+    border: 2px outset yellow;
+}
+.sub-menu-f li{
+    line-height: 30px
+}
+.sub-menu-f.open{
+    display: block;
+    z-index: 10001;
+}
+
 .copyright{
   margin-bottom:5px;
   font-size:13px;

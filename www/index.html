@@ -1,69 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Les Ferristes Auvergnats</title>
-<link rel="stylesheet" href="src/css/settings.css">
-<link rel="stylesheet" href="src/css/fonts.css">
-<link rel="stylesheet" href="src/css/header.css">
-<link rel="stylesheet" href="src/css/footer.css">
-<link rel="stylesheet" href="src/css/normalize.css">
-<link rel="stylesheet" href="src/css/sidebar.css">
-<link rel="stylesheet" href="src/css/slider.css">
-<link rel="stylesheet" href="src/css/logo_carousel.css">
-<link rel="stylesheet" href="src/css/chat.css">
-<link rel="shortcut icon" href="res/img/logo_ferristes.png" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Les Ferristes Auvergnats</title>
+	<link rel="shortcut icon" href="res/img/logo_ferristes.png">
+
+	<link rel="stylesheet" href="src/css/header.css">
+	<link rel="stylesheet" href="src/css/footer.css">
+
+	<link rel="stylesheet" href="src/css/settings.css">	
+	<link rel="stylesheet" href="src/css/normalize.css">
+
+	<link rel="stylesheet" href="src/css/widgets/home-banner.css">
+	<link rel="stylesheet" href="src/css/widgets/post_container.css">
+	<link rel="stylesheet" href="src/css/widgets/logo_carousel.css">
+	<link rel="stylesheet" href="src/css/utils/chat.css">
+	
 </head>
 <body>
 	<header>
-		<a href="index.html" class="banner-logo"></a>
-
-		<div class="icon-container">
+		<a href="index.html" class="header-logo"></a>
+		<div class="header-icon-container">
 			<a class="tooltip-a" href="src/html/login.html">
-                <img class=icon-navbar src="res/img/log_icon.png" alt="Login">
+                <img class=header-icon src="res/img/log_icon.png" alt="Login">
             </a>
-			<a target="_blank"
-				href="mailto:ferristes.auvergnats@gmail.com "> <img
-				class=icon-navbar src="res/img/envelope-regular-156.png"
-				alt="Email">
+			<a target="_blank" href="mailto:ferristes.auvergnats@gmail.com "> 
+				<img class=header-icon src="res/img/envelope-regular-156.png" alt="Email">
 				<div class="tooltip">ferristes.auvergnats@gmail.com</div>
 			</a>
-			<a target="_blank"
-			href="tel:+0011223344">
-				<img class=icon-navbar src="res/img/phone-regular-156.png"
-				alt="Téléphone">
-			<div class="tooltip" >00-11-22-33-44</div>
+			<a target="_blank"	href="tel:+0011223344">
+				<img class=header-icon src="res/img/phone-regular-156.png" alt="Téléphone">
+				<div class="tooltip" >00-11-22-33-44</div>
 			</a>
-			<a class="tooltip-a" target="_blank"
-				href="https://www.instagram.com/ferristes_auvergnats/"> <img
-				class=icon-navbar src="res/img/instagram-logo-156.png"
-				alt="Instagram">
+			<a class="tooltip-a" target="_blank" href="https://www.instagram.com/ferristes_auvergnats/"> 
+				<img class=header-icon src="res/img/instagram-logo-156.png" alt="Instagram">
 				<div class="tooltip">@ferristes_auvergnats</div>
 			</a>
 		</div>
 		<nav>
 			<ul class="navbar">
-				<li><a href="index.html" class="active">ACCUEIL</a></li>
-				<li class="submenu"><a class="developp" href="#">ASSOCIATION</a>
+				<li>
+					<a href="index.html" class="active">ACCUEIL</a>
+				</li>
+				<li class="submenu">
+					<a class="developp" href="#">ASSOCIATION</a>
 					<ul class="sub-menu">
-						<li><a href="src/html/infoutiles.html">Informations
-								Utiles</a></li>
-						<li><a href="src/html/presclub.html">Présentation du Club</a></li>
-						<li><a href="src/html/presmembres.html">Organigramme</a></li>
-						<li><a href="src/html/reglement.html">Règlement Intérieur</a></li>
-					</ul></li>
-				<li><a href="src/html/licence.html">SE LICENCIER</a></li>
-				<li><a href="src/html/infoutiles.html">NOUS CONTACTER</a></li>
+						<li>
+							<a href="src/html/informations.html">Informations Utiles</a>
+						</li>
+						<li>
+							<a href="src/html/presclub.html">Présentation du Club</a>
+						</li>
+						<li>
+							<a href="src/html/presmembres.html">Organigramme</a>
+						</li>
+						<li>
+							<a href="src/html/reglement.html">Règlement Intérieur</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="src/html/licence.html">SE LICENCIER</a>
+				</li>
+				<li>
+					<a href="src/html/informations.html">NOUS CONTACTER</a>
+				</li>
 			</ul>
 		</nav>
 		<a class=menuicon></a>
-
 	</header>
-
-	
 	<div class="page home">
-		<div class="home_banniere">
+		<div class="home-banner">
 			<h1>Les Ferristes Auvergnats</h1>
 			<h3>
 				Rejoignez le <b>premier</b> club de Bras de Fer en <b>Auvergne</b>
@@ -74,7 +83,7 @@
 					passion pour le bras de fer. Relevez de nouveaux défis, améliorez
 					votre technique et participez à des événements inoubliables.</h4>
 				<a href="src/html/licence.html" class="btn home-banner-button"
-					" target="_blank">JE ME RENSEIGNE</a>
+					target="_blank">JE ME RENSEIGNE</a>
 			</div>
 		</div>
 		<main>
@@ -82,72 +91,78 @@
 				<div class="recent-post">
 					<h1 class="recent-post-title">Récemment Ajoutés</h1>
 					<div class="post">
-						<img src="res/img/art1/img2.jpg" alt="" class="post-image">
+						<img src="res/img/art1/img2.jpg" alt="Image de la première rencontre du club" class="post-image">
 						<div class="post-preview">
 							<h1 class="preview-title">
-								<a href="src/html/premrencontre.html"
+								<a href="src/html/recent_posts/article1.html"
 									target="_blank">Première rencontre du Club</a>
 							</h1>
-							<img src="res/img/copyright.png" class="copyright-preview dark" alt="">
-							<img src="res/img/copyright-light.png" class="copyright-preview light" alt="">
-							<i>Les Ferristes Auvergnats</i> &nbsp; <img src="res/img/calendar_icon.png"
-								class="date-preview dark" alt="">
-								<img src="res/img/calendar_icon-light.png"
-								class="date-preview light" alt="">
-								 <i>Mar 17, 2024</i>
+							<img src="res/img/copyright.png" class="copyright-preview dark" alt="Logo Copyright">
+							<img src="res/img/copyright-light.png" class="copyright-preview light" alt="Logo Copyright">
+							<i>Les Ferristes Auvergnats</i> &nbsp; 
+							<img src="res/img/calendar_icon.png"
+								class="date-preview dark" alt="Logo Calendrier">
+							<img src="res/img/calendar_icon-light.png"
+								class="date-preview light" alt="Logo Calendrier">
+							<i>Mar 17, 2024</i>
 							<p class="preview-text">Après la parution au Journal Officiel, les ferristes auvergnats
 								organisent la première rencontre mélangeant les membres du bureau avec les futurs intéressés.
 								De futurs licenciés très prometteurs !
 								<br>
 							</p>
-							<a href="src/html/premrencontre.html"
-								class="btn read-more" target="_blank">Read More</a>
+							<a href="src/html/recent_posts/article1.html"
+								class="btn read-more" target="_blank">Lire plus</a>
 						</div>
 					</div>
 					<div class="post">
-						<img src="res/img/bras_fer_preview.jpg" alt="" class="post-image">
+						<img src="res/img/bras_fer_preview.jpg" alt="Image Sparring Devon Larrat" class="post-image">
 						<div class="post-preview">
 							<h1 class="preview-title">
 								<a href="https://fr.wikipedia.org/wiki/Bras_de_fer"
 									target="_blank">Qu'est-ce-que le Bras de Fer ?</a>
 							</h1>
-							<img src="res/img/copyright.png" class="copyright-preview dark" alt="">
-							<img src="res/img/copyright-light.png" class="copyright-preview light" alt="">
-							<i>Wikipédia</i> &nbsp;<img src="res/img/calendar_icon.png"
-							class="date-preview dark" alt="">
+							<img src="res/img/copyright.png" class="copyright-preview dark" alt="Logo Copyright">
+							<img src="res/img/copyright-light.png" class="copyright-preview light" alt="Logo Copyright">
+							<i>Wikipédia</i> &nbsp;
+							<img src="res/img/calendar_icon.png"
+							class="date-preview dark" alt="Logo Calendrier">
 							<img src="res/img/calendar_icon-light.png"
-							class="date-preview light" alt=""> <i>Mar 6, 2024</i>
+							class="date-preview light" alt="Logo Calendrier"> <i>Mar 6, 2024</i>
 							<p class="preview-text">Bien qu'étant une activité
 								millénaire, le bras de fer en tant que sport est très récent. En
 								effet, il a été codifié et organisé depuis les années 1970.
 								Populaire dans les pays d'Europe de l'Est jusqu'en Asie ainsi
 								qu'en Amérique du Nord, cette discipline est en développement en
-								France.</p>
+								France.
+							</p>
 							<a href="https://fr.wikipedia.org/wiki/Bras_de_fer"
-								class="btn read-more" target="_blank">Read More</a>
+								class="btn read-more" target="_blank">Lire plus</a>
 						</div>
 					</div>
 					<div class="post">
-						<img src="res/img/ffforce_preview.jpg" alt="" class="post-image">
+						<img src="res/img/ffforce_preview.jpg" alt="Logo FFForce" class="post-image">
 						<div class="post-preview">
 							<h1 class="preview-title">
 								<a href="https://youtu.be/yUtrbilSe3s?si=9KOzsydHAcennaU3"
 									target="_blank">Aymeric Pradines nous explique la
 									discipline</a>
 							</h1>
-							<img src="res/img/copyright.png" class="copyright-preview dark" alt="">
-							<img src="res/img/copyright-light.png" class="copyright-preview light" alt="">
-							<i>FFForce</i> &nbsp; <img src="res/img/calendar_icon.png"
-							class="date-preview dark" alt="">
+							<img src="res/img/copyright.png" class="copyright-preview dark" alt="Logo Copyright">
+							<img src="res/img/copyright-light.png" class="copyright-preview light" alt="Logo Copyright">
+							<i>FFForce</i> &nbsp; 
+							<img src="res/img/calendar_icon.png"
+							class="date-preview dark" alt="Logo Calendrier">
 							<img src="res/img/calendar_icon-light.png"
-							class="date-preview light" alt=""> <i>Mar 5, 2024</i>
+							class="date-preview light" alt="Logo Calendrier"> 
+							<i>Mar 5, 2024</i>
 							<p class="preview-text">Présentation de la discipline du Bras
 								de Fer par le multiple champion de france, Aymeric Pradines. Le
 								ferriste classé dans le top 20 mondial vous expliquera en détail
 								les règles, les techniques, et les bases pour commencer à
-								s'entraîner.</p>
+								s'entraîner.
+							</p>
 							<a href="https://youtu.be/yUtrbilSe3s?si=9KOzsydHAcennaU3"
-								class="btn read-more" target="_blank">View Video</a>
+								class="btn read-more" target="_blank">Voir la Vidéo</a>
 						</div>
 					</div>
 				</div>
@@ -157,109 +172,109 @@
 						<p class="sidebarcontent">Le calendrier des compétitions
 							nationales et internationales de Bras de Fer Sportif de la saison
 							2024 est consultable et téléchargeable ci-dessous.</p>
-						<center>
-							<a
-								href="https://www.ffforce.fr/medias/fichiers/Saison%202024/BRAS%20DE%20FER%20SPORTIF/CALENDRIER%20(Provisoire)%20SAISON%202024.pdf"
+						<a href="https://www.ffforce.fr/medias/fichiers/Saison%202024/BRAS%20DE%20FER%20SPORTIF/CALENDRIER%20(Provisoire)%20SAISON%202024.pdf"
 								class="calendar-dn" target="_blank">Voir le Calendrier</a>
-						</center>
 					</div>
 					<div class="sidebaritem long ">
 						<h1 class="licetitle">Se licencier FFForce</h1>
-						<img src="res/img/ffforce_preview.jpg" class="licelogo" alt="">
+						<img src="res/img/ffforce_preview.jpg" class="licelogo" alt="Logo FFForce">
 						<p class="sidebarcontent">Découvrir les avantages et les
 							bonnes raisons de prendre une licence FFForce.</p>
-						<a
-							href="https://www.ffforce.fr/fr/se-licencier-ffforce/prendre-sa-licence/les-avantages-de-la-licence.html"
+						<a href="https://www.ffforce.fr/fr/se-licencier-ffforce/prendre-sa-licence/les-avantages-de-la-licence.html"
 							class="calendar-dn" target="_blank">Voir la Page</a>
 					</div>
 				</div>
-				<!-- ###############""RIGHT HERE ############################## -->
-
-				<!-- ########################################################## -->
+			</div>
 		</main>
 	</div>
 	<div class="logos-carousel">
 		<div class="logos-slide">
-			<img src="res/img/logo_carousel/basicfit_carousel.png" alt="">
-			<img src="res/img/logo_carousel/decat_carousel.png" alt=""> <img
-				src="res/img/logo_carousel/ffforce_carousel.png" alt=""> <img
-				src="res/img/logo_carousel/ghost_carousel.png" alt=""> <img
-				src="res/img/logo_carousel/gymshark_carousel.png" alt=""> <img
-				src="res/img/logo_carousel/matrix_carousel.png" alt=""> <img
-				src="res/img/logo_carousel/monster_carousel.png" alt=""> <img
-				src="res/img/logo_carousel/myprotein_carousel.png" alt=""> <img
-				src="res/img/logo_carousel/nike_carousel.png" alt="">
+			<img src="res/img/logo_carousel/basicfit_carousel.png" alt="Logo Basic Fit">
+			<img src="res/img/logo_carousel/decat_carousel.png" alt="Logo Decathlon"> 
+			<img src="res/img/logo_carousel/ffforce_carousel.png" alt="Logo FFForce"> 
+			<img src="res/img/logo_carousel/ghost_carousel.png" alt="Logo Ghost Strong"> 
+			<img src="res/img/logo_carousel/gymshark_carousel.png" alt="Logo GymShark"> 
+			<img src="res/img/logo_carousel/matrix_carousel.png" alt="Logo Matrix">
+			<img src="res/img/logo_carousel/monster_carousel.png" alt="Logo Monster Energy">
+			<img src="res/img/logo_carousel/myprotein_carousel.png" alt="Logo MyProtein"> 
+			<img src="res/img/logo_carousel/nike_carousel.png" alt="Logo Nike">
 		</div>
 	</div>
-	<script>
-		var copy = document.querySelector(".logos-slide").cloneNode(true);
-		document.querySelector(".logos-carousel").appendChild(copy);
-	</script>
-	<!-- FOOTER -->
 	<!-- ICON DE CHAT -->
 	<a class="chaticon" href="#"></a>
 	<div class="chat">
-		<div class="chat-msg" id="msg-container">
-		</div>
+		<div class="chat-msg" id="msg-container"></div>
 		<div class="chat-textbox">
 			<textarea class="chatbox" id="message" placeholder="Entrez votre message ici..." rows="1"></textarea>
 			<a href="#" class="send-btn" id="chat-send"></a>
-			</div>
 		</div>
 	</div>
 
 	<footer>
 		<div class="footer-icon-container">
 			<a target="_blank"
-				href="mailto:ferristes.auvergnats@gmail.com "> <img
-				class=icon-navbar src="res/img/envelope-regular-156.png"
+				href="mailto:ferristes.auvergnats@gmail.com "> 
+				<img class=footer-icon src="res/img/envelope-regular-156.png"
 				alt="Email">
 				<div class="footer-tooltip">ferristes.auvergnats@gmail.com</div>
 			</a>
 			<a target="_blank"
 			href="tel:+0011223344">
-				<img class=icon-navbar src="res/img/phone-regular-156.png"
+				<img class=footer-icon src="res/img/phone-regular-156.png"
 				alt="Téléphone">
 			<div class="footer-tooltip" >00-11-22-33-44</div>
 			</a>
 			<a target="_blank"
-				href="https://www.instagram.com/ferristes_auvergnats/"> <img
-				class=icon-navbar src="res/img/instagram-logo-156.png"
+				href="https://www.instagram.com/ferristes_auvergnats/"> 
+				<img class=footer-icon src="res/img/instagram-logo-156.png"
 				alt="Instagram">
 				<div class="footer-tooltip">@ferristes_auvergnats</div>
 			</a>
 		</div>
 		<nav>
 			<ul class=footer-navbar>
-				<li><a href="index.html" class=active>ACCUEIL</a></li>
-				<li class="submenuf"><a class="developpf" href="#">ASSOCIATION</a>
+				<li>
+					<a href="index.html" class=active>ACCUEIL</a>
+				</li>
+				<li class="submenuf">
+					<a class="developpf" href="#">ASSOCIATION</a>
 					<ul class="sub-menu-f">
-						<li><a href="src/html/infoutiles.html">Informations
-								Utiles</a></li>
-						<li><a href="src/html/presclub.html">Présentation du Club</a></li>
-						<li><a href="src/html/presmembres.html">Organigramme</a></li>
-						<li><a href="src/html/reglement.html">Réglement Intérieur</a></li>
-					</ul></li>
-				<li><a href="src/html/licence.html">SE LICENCIER</a></li>
-				<li><a href="src/html/infoutiles.html">NOUS CONTACTER</a></li>
+						<li>
+							<a href="src/html/informations.html">Informations	Utiles</a>
+						</li>
+						<li>
+							<a href="src/html/presclub.html">Présentation du Club</a>
+						</li>
+						<li>
+							<a href="src/html/presmembres.html">Organigramme</a>
+						</li>
+						<li>
+							<a href="src/html/reglement.html">Réglement Intérieur</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="src/html/licence.html">SE LICENCIER</a>
+				</li>
+				<li>
+					<a href="src/html/informations.html">NOUS CONTACTER</a>
+				</li>
 			</ul>
 		</nav>
 		<p class="copyright">Les Ferristes Auvergnats © 2024</p>
 	</footer>
-	<!-- SCRIPTS -->
-	<!-- <script
-		src="https://cdnjs.cloudfare.com/ajax/libs/jsquery/3.3.1/jquery.min.js"></script> -->
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script type="text/javascript"
-		src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+	<!-- Scripts -->
+		<!-- Logo Carousel -->
+		<script>
+			var copy = document.querySelector(".logos-slide").cloneNode(true);
+			document.querySelector(".logos-carousel").appendChild(copy);
+		</script>
 	<script src="src/js/base.js"></script>
 	<script src="src/js/chat.js"></script>
-	<script src="src/js/chat-js.js"></script>
+    <script src="src/js/chat-js.js"></script>
 	<noscript>
-		<p>
-			<center>Ce site utilise JavaScript</center>
-		</p>
+		Ce site utilise JavaScript
 	</noscript>
 </body>
 </html>

@@ -1,32 +1,11 @@
-.btn{
-    padding: .5rem 1rem;
-    background: black;
-    color: var(--text-color);
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    text-decoration: none;
-}
-
-.btn:hover{
-    background: rgb(47, 44, 44);
-}
-.clearfix::after{
-    content: '';
-    display: block;
-    clear: both;
-}
+/* RECENT POST CONTAINER Style Sheet */
 .recent-post-container{
     width: 90%;
     margin: 30px auto 30px;
-    /* border: 1px solid orange; */
-    /* height: 750px; */
-
 }
 .recent-post-container .sidebarhome{
     width: 30%;
-    /* height: 100%; */
     float: left;
-    /* border: 1px dashed teal; */
     margin-top: 0;
 }
 .recent-post-container .sidebarhome .sidebaritem{
@@ -99,12 +78,10 @@
 }
 .recent-post-container .recent-post .post{
     width: 95%;
-    /* height: min-content; */
     margin: 10px auto;
     border-radius: 10px;
     background: var(--bg-color);
     position: relative;
-    /* border: 1px dotted violet; */
     display: flex;
     flex-direction: row;
     border: 2px solid var(--mode-text);
@@ -146,7 +123,6 @@
 }
 .recent-post-container .recent-post .post .post-image{
     width: 40%;
-    /* height: 100%; */
     float: left;
     object-fit: cover;
     border-top-left-radius: 10px;
@@ -164,7 +140,22 @@
     width: 60%;
     padding: 30px 30px;
     float: right;
-    /* border: 1px dotted darkcyan; */
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.btn{
+    padding: .5rem 1rem;
+    background: black;
+    color: var(--text-color);
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    text-decoration: none;
+}
+.btn:hover{
+    background: rgb(47, 44, 44);
 }
 
 @media screen and (max-width: 1140px) {
@@ -191,7 +182,6 @@
         padding-bottom: 20px;
     }
     .recent-post-container .sidebarhome .long .licelogo{
-        /* padding: 30px; */
         margin: auto;
         display: block;
     }

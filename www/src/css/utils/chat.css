@@ -1,34 +1,8 @@
-.chaticon {
-    background-image: url("../../res/img/chat-logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    width: 19%;
-    height: 13%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    opacity: 1;
-    transition: opacity .7s;
-    cursor: pointer; 
-    z-index: 11000001; 
-}
-.chaticon.scrolled {
-    opacity: 0.15;
-}
-
-.chaticon:focus{
-    opacity: 1;
-}
-.chaticon:hover{
-    opacity: 1;
-    transition: opacity .2s;
-}
-
+/* CHAT Style Sheet */
 .chat{
     width: 25%;
     height: 50%;
-    background-image: url(../../res/img/form_bg.png);
+    background-image: url(../../../res/img/form_bg.png);
     border-radius: 15px;
     z-index: 11000001;
     position: fixed;
@@ -90,11 +64,38 @@
     width: 25%;
     height: 75%;
     margin: auto;
-    background-image: url("../../res/img/chat-send-btn.png");
+    background-image: url("../../../res/img/chat-send-btn.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1000000001;
+}
+
+.chaticon {
+    background-image: url("../../../res/img/chat-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 19%;
+    height: 13%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    transition: opacity .7s;
+    cursor: pointer; 
+    z-index: 11000001; 
+}
+.chaticon.scrolled {
+    opacity: 0.15;
+}
+
+.chaticon:focus{
+    opacity: 1;
+}
+.chaticon:hover{
+    opacity: 1;
+    transition: opacity .2s;
 }
 
 @media screen and (max-width: 1100px){
