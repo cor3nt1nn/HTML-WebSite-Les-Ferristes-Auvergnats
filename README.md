@@ -1,1 +1,1 @@
-
+<!-- Dans ce dossier, vous trouverez le projet de Techno Web Client réalisé par Villedieu Maxance et Besqueut Corentin (en PrepIsima 2). Le site web réalisé porte sur l'association que nous avons créé il y a quelques mois, Les Ferristes Auvergnats. Il s'agit d'un club de Bras de Fer. -->

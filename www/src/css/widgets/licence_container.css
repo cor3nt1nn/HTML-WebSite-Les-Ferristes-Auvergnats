@@ -1,3 +1,6 @@
+/* Cette feuille de style produit le même résultat que licence_container_no_sass.css mais 
+ne passe pas W3C à cause du format "sass" */
+
 @media screen and (max-width: 550px) {
 .container {
 font-family: "kanit-sb";
